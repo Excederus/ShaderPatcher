@@ -75,12 +75,14 @@ public class ShaderpackPatcher {
                     LOG.warn("No mapping found for {} {} patch", patch.source(), patch.resourceKey());
                     continue;
                 }
+                LOG.info("Using {} mapping file", mapping.resourceKey().modid());
 
                 Resource transform = getApplicableResource(patch.resourceKey(), resourceBundle.transforms());
                 if (transform == null) {
                     LOG.warn("No transform found for {} {} patch", patch.source(), patch.resourceKey());
                     continue;
                 }
+                LOG.info("Using {} transform file", transform.resourceKey().modid());
 
                 patch = applyTransform(patch, transform);
                 mapping = applyTransform(mapping, transform);
@@ -251,6 +253,10 @@ public class ShaderpackPatcher {
             contents.put(key, new Content(transformedValues));
         }
 
+        for (var entry : contents.entrySet()) {
+            LOG.info("TRANSFORM RESULT {} -> {}", entry.getKey(), entry.getValue().values());
+        }
+
         return new Resource(
                 resource.resourceKey(),
                 resource.source(),
@@ -267,59 +273,56 @@ public class ShaderpackPatcher {
             String mappingHelperIdentifier = mappingHelperEntry.getKey().identifier();
             List<String> mappingHelperValues = mappingHelperEntry.getValue().values();
 
-            List<String> allMatchedPatchValues = new ArrayList<>();
+            for (String mappingHelperValue : mappingHelperValues) {
+                List<String> matchedPatchValues = new ArrayList<>();
 
-            for (var patchEntry : patch.contents().entrySet()) {
-                MappingKey patchKey = patchEntry.getKey();
-                Content mappingContent = mapping.contents().get(patchKey);
+                for (var patchEntry : patch.contents().entrySet()) {
+                    MappingKey patchKey = patchEntry.getKey();
+                    Content mappingContent = mapping.contents().get(patchKey);
 
-                if (mappingContent == null) {
-                    var fallbackKey = new MappingKey(
-                            patchKey.category(),
-                            patchKey.concept(),
-                            "_default"
-                    );
+                    if (mappingContent == null) {
+                        var fallbackKey = new MappingKey(
+                                patchKey.category(),
+                                patchKey.concept(),
+                                "_default"
+                        );
 
-                    mappingContent = mapping.contents().get(fallbackKey);
-                }
+                        mappingContent = mapping.contents().get(fallbackKey);
+                    }
 
-                if (mappingContent == null)
-                    continue;
+                    if (mappingContent == null)
+                        continue;
 
-                List<String> patchValues = patchEntry.getValue().values();
-                List<String> mappingTargets = mappingContent.values();
+                    List<String> patchValues = patchEntry.getValue().values();
+                    List<String> mappingTargets = mappingContent.values();
 
-                // Non-transformed concepts:
-                // one mapping target -> all patch values
-                if (mappingTargets.size() == 1)
-                    if (mappingHelperValues.contains(mappingTargets.get(0)))
-                        allMatchedPatchValues.addAll(patchValues);
-
-                // Transformed concepts:
-                // append all patch values with matching blockstate properties
-                else {
                     for (String mappingTarget : mappingTargets) {
-                        if (!mappingHelperValues.contains(mappingTarget))
+                        if (!mappingHelperValue.equals(mappingTarget))
                             continue;
 
-                        for (String patchValue : patchValues)
-                            if (getProperties(mappingTarget).equals(getProperties(patchValue)))
-                                allMatchedPatchValues.add(patchValue);
+                        if (mappingTargets.size() > 1) {
+                            for (String patchValue : patchValues) {
+                                if (getProperties(mappingTarget).equals(getProperties(patchValue)))
+                                    matchedPatchValues.add(patchValue);
+                            }
+                        } else {
+                            matchedPatchValues.addAll(patchValues);
+                        }
                     }
                 }
-            }
 
-            if (allMatchedPatchValues.isEmpty())
-                continue;
-
-            for (PropertyNode node : patchTarget.nodes()) {
-                if (!(node instanceof EntryNode entryNode))
+                if (matchedPatchValues.isEmpty())
                     continue;
 
-                if (!entryNode.identifier().equals(mappingHelperIdentifier))
-                    continue;
+                for (PropertyNode node : patchTarget.nodes()) {
+                    if (!(node instanceof EntryNode entryNode))
+                        continue;
 
-                appendPatch(entryNode, allMatchedPatchValues);
+                    if (!entryNode.identifier().equals(mappingHelperIdentifier))
+                        continue;
+
+                    appendPatch(entryNode, matchedPatchValues);
+                }
             }
         }
     }
