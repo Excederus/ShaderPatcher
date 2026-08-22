@@ -1,0 +1,25 @@
+waving:
+  grass:
+    tall:
+      - ":half=lower"
+      - ":half=upper"
+  flower:
+    tall:
+      - ":half=lower"
+      - ":half=upper"
+SSS:
+  grass_block:
+    - ":snowy=false"
+    - ":snowy=true"
+  podzol:
+    - ":snowy=false"
+    - ":snowy=true"
+  mycelium:
+    - ":snowy=false"
+    - ":snowy=true"
+  farmland:
+    - ":moisture=0~7"
+translucent:
+  glass:
+    - ""
+    - "_pane"
