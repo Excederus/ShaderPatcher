@@ -55,7 +55,7 @@ public class ShaderpackResourceLoader {
         }
 
         if (shaderpacks.isEmpty())
-            LOG.error("No shaderpacks loaded");
+            LOG.warn("No shaderpacks loaded");
 
         return shaderpacks;
     }
