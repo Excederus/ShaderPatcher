@@ -75,14 +75,12 @@ public class ShaderpackPatcher {
                     LOG.warn("No mapping found for {} {} patch", patch.source(), patch.resourceKey());
                     continue;
                 }
-                LOG.info("Using {} mapping file", mapping.resourceKey().modid());
 
                 Resource transform = getApplicableResource(patch.resourceKey(), resourceBundle.transforms());
                 if (transform == null) {
                     LOG.warn("No transform found for {} {} patch", patch.source(), patch.resourceKey());
                     continue;
                 }
-                LOG.info("Using {} transform file", transform.resourceKey().modid());
 
                 patch = applyTransform(patch, transform);
                 mapping = applyTransform(mapping, transform);
@@ -251,10 +249,6 @@ public class ShaderpackPatcher {
             }
 
             contents.put(key, new Content(transformedValues));
-        }
-
-        for (var entry : contents.entrySet()) {
-            LOG.info("TRANSFORM RESULT {} -> {}", entry.getKey(), entry.getValue().values());
         }
 
         return new Resource(
