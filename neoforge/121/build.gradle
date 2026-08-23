@@ -1,0 +1,122 @@
+plugins {
+    id 'java-library'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.neoforged.moddev' version '2.0.144'
+}
+
+version = rootProject.version
+group = rootProject.group
+
+base {
+    archivesName = "ShaderPatcher-neoforge-1.21"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+}
+
+repositories {
+    mavenCentral()
+}
+
+neoForge {
+    version = project.neo_version
+
+    runs {
+        client {
+            client()
+
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'shaderpatcher'
+        }
+
+        server {
+            server()
+
+            programArgument '--nogui'
+
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'shaderpatcher'
+        }
+
+        gameTestServer {
+            type = 'gameTestServer'
+
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'shaderpatcher'
+        }
+
+        data {
+            data()
+
+            programArguments.addAll(
+                    '--mod', 'shaderpatcher',
+                    '--all',
+                    '--output', file('src/generated/resources/').absolutePath,
+                    '--existing', file('src/main/resources/').absolutePath
+            )
+        }
+
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+    }
+
+    mods {
+        shaderpatcher {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+configurations {
+    runtimeClasspath.extendsFrom localRuntime
+}
+
+dependencies {
+    implementation project(':common')
+
+    // SnakeYAML is bundled into the final mod JAR.
+    jarJar('org.snakeyaml:snakeyaml-engine:[2.9,2.10)') {
+        version {
+            prefer('2.9')
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}
+
+tasks.named('jar') {
+    from(project(':common').sourceSets.main.output)
+
+    def projectName = project.name
+
+    inputs.property 'projectName', projectName
+
+    from(rootProject.file('LICENSE')) {
+        rename { "${it}_${projectName}" }
+    }
+}
+
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}
+
+publishing {
+    publications {
+        register('mavenJava', MavenPublication) {
+            from components.java
+        }
+    }
+}

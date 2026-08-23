@@ -1,23 +1,13 @@
-plugins {
-	id 'fabric-loom' version '1.7.4' apply false
-	id 'net.minecraftforge.gradle' version '[6.0,6.2)' apply false
-}
+version = providers.gradleProperty("version").get()
+group = providers.gradleProperty("group").get()
 
 allprojects {
-	group = project.maven_group
-	version = project.version
+    repositories {
+        mavenCentral()
+    }
+}
 
-	repositories {
-		mavenCentral()
-
-		maven {
-			name = "Fabric"
-			url = "https://maven.fabricmc.net/"
-		}
-
-		maven {
-			name = "Forge"
-			url = "https://maven.minecraftforge.net/"
-		}
-	}
+subprojects {
+    version = rootProject.version
+    group = rootProject.group
 }
