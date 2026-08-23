@@ -19,4 +19,8 @@ dependencyResolutionManagement {
 rootProject.name = 'ShaderPatcher'
 
 include('common')
+
 include('fabric:1.19')
+include('fabric:26.1')
+
+include('neoforge:1.21')

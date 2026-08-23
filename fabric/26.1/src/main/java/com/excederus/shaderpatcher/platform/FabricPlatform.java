@@ -1,14 +1,12 @@
-package com.excederus.shaderpatcher;
+package com.excederus.shaderpatcher.platform;
 
-import com.excederus.shaderpatcher.platform.LoaderType;
-import com.excederus.shaderpatcher.platform.Platform;
 import com.excederus.shaderpatcher.resource.model.InternalResource;
 import com.excederus.shaderpatcher.resource.model.ResourceCategory;
 import com.excederus.shaderpatcher.resource.model.ResourceSource;
 import com.excederus.shaderpatcher.resource.model.ResourceType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.Minecraft;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.packs.resources.Resource;
 
 import java.io.IOException;
@@ -23,11 +21,6 @@ import static com.excederus.shaderpatcher.Constants.*;
 public class FabricPlatform implements Platform {
 
     @Override
-    public LoaderType getLoaderType() {
-        return LoaderType.FABRIC;
-    }
-
-    @Override
     public Path getGameDir() {
         return FabricLoader.getInstance().getGameDir();
     }
@@ -37,9 +30,9 @@ public class FabricPlatform implements Platform {
 
         List<InternalResource> resources = new ArrayList<>();
 
-        Map<ResourceLocation, Resource> internalResources = Minecraft.getInstance().getResourceManager().listResources(MODID, id -> id.getPath().endsWith(".yaml") || id.getPath().endsWith(".yml"));
+        Map<Identifier, Resource> internalResources = Minecraft.getInstance().getResourceManager().listResources(MODID, id -> id.getPath().endsWith(".yaml") || id.getPath().endsWith(".yml"));
 
-        for (Map.Entry<ResourceLocation, Resource> resource : internalResources.entrySet()) {
+        for (Map.Entry<Identifier, Resource> resource : internalResources.entrySet()) {
 
             try (InputStream stream = resource.getValue().open()) {
 

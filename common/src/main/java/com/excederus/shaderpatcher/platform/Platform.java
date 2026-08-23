@@ -7,8 +7,6 @@ import java.util.List;
 
 public interface Platform {
 
-    LoaderType getLoaderType();
-
     Path getGameDir();
 
     List<InternalResource> getInternalResources();

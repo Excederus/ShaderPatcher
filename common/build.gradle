@@ -11,3 +11,46 @@ dependencies {
     compileOnly 'commons-io:commons-io:2.13.0'
     compileOnly 'org.jetbrains:annotations:24.0.1'
 }
+
+
+
+def generatedSourcesDir = layout.buildDirectory.dir("generated/sources/version/main")
+
+tasks.register("generateConstants") {
+    def outputDir = generatedSourcesDir.get().asFile
+
+    outputs.dir(outputDir)
+
+    doLast {
+        def packageDir = new File(
+                outputDir,
+                "com/excederus/shaderpatcher"
+        )
+        packageDir.mkdirs()
+
+        new File(packageDir, "Constants.java").text = """
+package com.excederus.shaderpatcher;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public final class Constants {
+
+    public static final String MODID = "${modid}";
+    public static final String MODNAME = "${modname}";
+    public static final String MODVERSION = "${version}";
+    public static final String MODTAG = MODID + "-" + MODVERSION;
+    
+    public static final Logger LOG = LoggerFactory.getLogger(MODNAME);
+    
+    private Constants() {}
+}
+"""
+    }
+}
+
+sourceSets.main.java.srcDir(generatedSourcesDir)
+
+tasks.named("compileJava") {
+    dependsOn("generateConstants")
+}
