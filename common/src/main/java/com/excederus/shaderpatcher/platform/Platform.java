@@ -7,8 +7,6 @@ import java.util.List;
 
 public interface Platform {
 
-    String getVersion();
-
     LoaderType getLoaderType();
 
     Path getGameDir();

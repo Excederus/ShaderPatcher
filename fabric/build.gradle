@@ -1,0 +1,45 @@
+plugins {
+    id 'fabric-loom'
+    id 'maven-publish'
+}
+
+base {
+    archivesName = "ShaderPatcher-fabric"
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    implementation project(":common")
+
+    include "org.snakeyaml:snakeyaml-engine:2.9"
+}
+
+jar {
+    from(project(":common").sourceSets.main.output)
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.release = 17
+}
+
+java {
+    withSourcesJar()
+
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}

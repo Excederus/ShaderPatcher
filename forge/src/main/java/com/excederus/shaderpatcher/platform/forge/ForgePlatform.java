@@ -1,4 +1,4 @@
-package com.excederus.shaderpatcher.platform.fabric;
+package com.excederus.shaderpatcher.platform.forge;
 
 import com.excederus.shaderpatcher.platform.LoaderType;
 import com.excederus.shaderpatcher.platform.Platform;
@@ -6,10 +6,10 @@ import com.excederus.shaderpatcher.resource.model.InternalResource;
 import com.excederus.shaderpatcher.resource.model.ResourceCategory;
 import com.excederus.shaderpatcher.resource.model.ResourceSource;
 import com.excederus.shaderpatcher.resource.model.ResourceType;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.Resource;
+import net.minecraftforge.fml.loading.FMLPaths;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,23 +18,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static com.excederus.shaderpatcher.Constants.*;
+import static com.excederus.shaderpatcher.Constants.LOG;
+import static com.excederus.shaderpatcher.Constants.MODID;
 
-public class FabricPlatform implements Platform {
-
-    @Override
-    public String getVersion() {
-        return FabricLoader.getInstance().getModContainer(MODID).orElseThrow().getMetadata().getVersion().getFriendlyString();
-    }
+public class ForgePlatform implements Platform {
 
     @Override
     public LoaderType getLoaderType() {
-        return LoaderType.FABRIC;
+        return LoaderType.FORGE;
     }
 
     @Override
     public Path getGameDir() {
-        return FabricLoader.getInstance().getGameDir();
+        return FMLPaths.GAMEDIR.get();
     }
 
     @Override

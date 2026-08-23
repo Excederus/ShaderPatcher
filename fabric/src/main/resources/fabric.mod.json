@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "shaderpatcher",
   "version": "${version}",
-  "name": "ShaderPatcher",
+  "name": "Shader Patcher",
   "description": "Tries to add mod support to any shader",
   "authors": ["Excederus"],
   "contact": {
@@ -19,7 +19,7 @@
   },
   "depends": {
     "fabricloader": ">=0.19.3",
-    "minecraft": "~1.20.1",
+    "minecraft": ">=1.19 <=1.21.11",
     "java": ">=17"
   }
 }

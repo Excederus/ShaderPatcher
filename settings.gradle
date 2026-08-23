@@ -1,13 +1,22 @@
 pluginManagement {
-	repositories {
-		maven {
-			name = 'Fabric'
-			url = 'https://maven.fabricmc.net/'
-		}
-		mavenCentral()
-		gradlePluginPortal()
-	}
+    repositories {
+        maven {
+            name = "Fabric"
+            url = "https://maven.fabricmc.net/"
+        }
+
+        maven {
+            name = "Forge"
+            url = "https://maven.minecraftforge.net/"
+        }
+
+        gradlePluginPortal()
+        mavenCentral()
+    }
 }
 
-// Should match your modid
-rootProject.name = 'ShaderPatcher'
+rootProject.name = "ShaderPatcher"
+
+include("common")
+include("fabric")
+include("forge")
