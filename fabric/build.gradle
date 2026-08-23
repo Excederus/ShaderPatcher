@@ -1,3 +1,29 @@
+plugins {
+    id 'fabric-loom'
+    id 'maven-publish'
+}
+
 dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
     implementation project(":common")
+
+    include "org.snakeyaml:snakeyaml-engine:2.9"
+}
+
+processResources {
+    def version = project.version
+    inputs.property "version", version
+
+    filesMatching("fabric.mod.json") {
+        expand "mod_version": project.mod_version
+    }
+}
+
+java {
+    withSourcesJar()
 }
