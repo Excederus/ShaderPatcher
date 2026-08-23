@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "shaderpatcher",
+  "version": "${version}",
+  "name": "Shader Patcher",
+  "description": "Tries to add mod support to any shader",
+  "authors": ["Excederus"],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/Excederus/ShaderPatcher"
+  },
+  "license": "LGPL-3.0-only",
+  "icon": "assets/shaderpatcher/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.excederus.shaderpatcher.platform.fabric.FabricShaderPatcher"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": ">=1.19 <=1.21.11",
+    "java": ">=17"
+  }
+}

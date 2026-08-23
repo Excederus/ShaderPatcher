@@ -18,5 +18,8 @@ pluginManagement {
 rootProject.name = "ShaderPatcher"
 
 include("common")
-include("fabric")
-include("forge")
+
+include(":fabric:119")
+include(":fabric:261")
+
+include(":forge:119")
