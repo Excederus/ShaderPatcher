@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'net.minecraftforge.gradle' version "${forgegradle_version}"
     id 'net.minecraftforge.jarjar' version "${jarjar_version}"
+    id 'net.minecraftforge.renamer' version "${renamer_version}"
 }
 
 base.archivesName = 'ShaderPatcher-Forge 1.19'
@@ -33,6 +34,12 @@ tasks.named('jarJar') {
     archiveClassifier = null
 
     from project(':common').sourceSets.main.output
+}
+
+renamer.mappings.from minecraft.dependency.toSrgFile
+
+renamer.classes(tasks.named('jarJar')) {
+    archiveClassifier = null
 }
 
 processResources {
