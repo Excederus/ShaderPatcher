@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "id": "${mod_id}",
-  "version": "${mod_version}",
-  "name": "${mod_name}",
-  "description": "${description}",
-  "authors": ["${author}"],
+  "id": "shaderpatcher",
+  "version": "${version}",
+  "name": "Shader Patcher",
+  "description": "Tries to add mod support to any shader",
+  "authors": ["Excederus"],
   "contact": {
     "homepage": "",
-    "sources": "${url}"
+    "sources": "https://github.com/Excederus/ShaderPatcher"
   },
-  "license": "${license}",
+  "license": "LGPL-3.0-only",
   "icon": "assets/shaderpatcher/icon.png",
   "environment": "client",
   "entrypoints": {
@@ -19,7 +19,7 @@
   },
   "depends": {
     "fabricloader": ">=0.19.3",
-    "minecraft": "~1.20.1",
+    "minecraft": ">=1.19 <=1.21.11",
     "java": ">=17"
   }
 }

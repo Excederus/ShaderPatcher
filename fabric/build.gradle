@@ -3,6 +3,10 @@ plugins {
     id 'maven-publish'
 }
 
+base {
+    archivesName = "ShaderPatcher-fabric"
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings loom.officialMojangMappings()
@@ -15,15 +19,27 @@ dependencies {
     include "org.snakeyaml:snakeyaml-engine:2.9"
 }
 
+jar {
+    from(project(":common").sourceSets.main.output)
+}
+
 processResources {
-    def version = project.version
-    inputs.property "version", version
+    inputs.property "version", project.version
 
     filesMatching("fabric.mod.json") {
-        expand "mod_version": project.mod_version
+        expand "version": project.version
     }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.release = 17
 }
 
 java {
     withSourcesJar()
+
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }

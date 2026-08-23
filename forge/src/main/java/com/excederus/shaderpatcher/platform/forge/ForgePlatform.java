@@ -9,6 +9,7 @@ import com.excederus.shaderpatcher.resource.model.ResourceType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.Resource;
+import net.minecraftforge.fml.loading.FMLPaths;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,7 +30,7 @@ public class ForgePlatform implements Platform {
 
     @Override
     public Path getGameDir() {
-        return FMLLoader.getGameDirectory();
+        return FMLPaths.GAMEDIR.get();
     }
 
     @Override
