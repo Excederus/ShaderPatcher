@@ -1,0 +1,61 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version "${forgegradle_version}"
+    id 'net.minecraftforge.jarjar' version "${jarjar_version}"
+    id 'net.minecraftforge.renamer' version "${renamer_version}"
+}
+
+base.archivesName = 'ShaderPatcher-Forge 1.19'
+java.toolchain.languageVersion = JavaLanguageVersion.of("${java_version}")
+
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+}
+
+repositories {
+    minecraft.mavenizer(it)
+    maven fg.forgeMaven
+    maven fg.minecraftLibsMaven
+}
+
+dependencies {
+    implementation minecraft.dependency("net.minecraftforge:forge:${minecraft_version}-${forge_version}")
+
+    implementation project(":common")
+}
+
+jarJar.register()
+
+dependencies {
+    jarJar 'org.snakeyaml:snakeyaml-engine:2.6'
+}
+
+tasks.named('jarJar') {
+    archiveClassifier = null
+
+    from project(':common').sourceSets.main.output
+}
+
+renamer.mappings.from minecraft.dependency.toSrgFile
+
+renamer.classes(tasks.named('jarJar')) {
+    archiveClassifier = null
+}
+
+processResources {
+    def version = rootProject.version
+    def minecraft_version_range = project.minecraft_version_range
+    def forge_version_range = project.forge_version_range
+
+    inputs.property "version", version
+    inputs.property "minecraft_version_range", minecraft_version_range
+    inputs.property "forge_version_range", forge_version_range
+
+    filesMatching("META-INF/mods.toml") {
+        expand(
+                version: version,
+                minecraft_version_range: minecraft_version_range,
+                forge_version_range: forge_version_range
+        )
+    }
+}
