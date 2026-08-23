@@ -1,31 +1,16 @@
 pluginManagement {
     repositories {
         maven {
-            name = "Fabric"
-            url = "https://maven.fabricmc.net/"
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net'
         }
 
-        maven {
-            name = "Forge"
-            url = "https://maven.minecraftforge.net/"
-        }
-
-        gradlePluginPortal()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 
-plugins {
-    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
-}
+rootProject.name = 'ShaderPatcher'
 
-rootProject.name = "ShaderPatcher"
-
-include(":common")
-
-include(":fabric:119")
-include(":fabric:261")
-
-include(":forge:119")
-
-include(":neoforge:121")
+include('common')
+include('fabric:1.19')
