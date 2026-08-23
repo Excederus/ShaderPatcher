@@ -1,0 +1,28 @@
+plugins {
+    id 'net.minecraftforge.gradle' version "${forgegradle_version}"
+}
+
+tasks.named('jar') {
+    archiveBaseName = 'ShaderPatcher-Forge 1.19'
+}
+java.toolchain.languageVersion = JavaLanguageVersion.of("${java_version}")
+
+jarJar.enable()
+
+minecraft {
+    mappings channel: 'official', version: "${minecraft_version}"
+}
+
+dependencies {
+    implementation minecraft.dependency("net.minecraftforge:forge:${minecraft_version}-${forge_version}")
+    annotationProcessor 'net.minecraftforge:eventbus-validator:7.0.5'
+
+    implementation project(":common")
+
+    jarJar(implementation("org.snakeyaml:snakeyaml-engine:2.6"))
+}
+
+jar {
+    from project(':common').sourceSets.main.output
+}
+

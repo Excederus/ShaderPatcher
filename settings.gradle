@@ -24,3 +24,6 @@ include('fabric:1.19')
 include('fabric:26.1')
 
 include('neoforge:1.21')
+include('neoforge:26.1')
+
+include('forge:1.19')
