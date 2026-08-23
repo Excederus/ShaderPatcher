@@ -2,13 +2,23 @@ plugins {
     id 'net.fabricmc.fabric-loom-remap' version '1.17-SNAPSHOT'
 }
 
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
 dependencies {
     minecraft 'com.mojang:minecraft:1.19'
+    mappings loom.officialMojangMappings()
 
     implementation 'net.fabricmc:fabric-loader:0.19.3'
     implementation 'net.fabricmc.fabric-api:fabric-api:0.58.0+1.19'
+
+    implementation project(path: ':common')
 }
 
-tasks.withType(JavaCompile).configureEach {
-    it.options.release = 25
+processResources {
+    def version = rootProject.version
+    inputs.property "version", version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": version
+    }
 }
