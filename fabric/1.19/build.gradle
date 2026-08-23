@@ -1,24 +1,34 @@
 plugins {
-    id 'net.fabricmc.fabric-loom-remap' version '1.17-SNAPSHOT'
+    id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 dependencies {
-    minecraft 'com.mojang:minecraft:1.19'
+    minecraft "com.mojang:minecraft:${minecraft_version}"
     mappings loom.officialMojangMappings()
 
-    implementation 'net.fabricmc:fabric-loader:0.19.3'
-    implementation 'net.fabricmc.fabric-api:fabric-api:0.58.0+1.19'
+    implementation "net.fabricmc:fabric-loader:${loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${api_version}"
 
     implementation project(path: ':common')
 }
 
 processResources {
     def version = rootProject.version
+    def java_version = project.java_version
+    def minecraft_version_range = project.minecraft_version_range
+    def loader_version_range = project.loader_version_range
+
     inputs.property "version", version
+    inputs.property "java_version", java_version
+    inputs.property "minecraft_version_range", minecraft_version_range
+    inputs.property "loader_version_range", loader_version_range
 
     filesMatching("fabric.mod.json") {
         expand "version": version
+        expand "java_version": java_version
+        expand "minecraft_version_range": minecraft_version_range
+        expand "loader_version_range": loader_version_range
     }
 }

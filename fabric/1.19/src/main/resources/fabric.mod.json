@@ -15,24 +15,14 @@
   "icon": "assets/shaderpatcher/icon.png",
   "environment": "client",
   "entrypoints": {
-    "main": [
-      "com.example.ExampleMod"
-    ],
     "client": [
-      "com.example.client.ExampleModClient"
+      "com.excederus.shaderpatcher.FabricEntrypoint"
     ]
   },
-  "mixins": [
-    "modid.mixins.json",
-    {
-      "config": "modid.client.mixins.json",
-      "environment": "client"
-    }
-  ],
   "depends": {
-    "fabricloader": ">=0.19.3",
-    "minecraft": "~26.2",
-    "java": ">=25",
+    "fabricloader": "${loader_version_range}",
+    "minecraft": "${minecraft_version_range}",
+    "java": "${java_version}",
     "fabric-api": "*"
   }
 }
