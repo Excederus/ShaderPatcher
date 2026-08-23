@@ -1,28 +1,54 @@
 plugins {
+    id 'java'
     id 'net.minecraftforge.gradle' version "${forgegradle_version}"
+    id 'net.minecraftforge.jarjar' version "${jarjar_version}"
 }
 
-tasks.named('jar') {
-    archiveBaseName = 'ShaderPatcher-Forge 1.19'
-}
+base.archivesName = 'ShaderPatcher-Forge 1.19'
 java.toolchain.languageVersion = JavaLanguageVersion.of("${java_version}")
 
-jarJar.enable()
-
 minecraft {
-    mappings channel: 'official', version: "${minecraft_version}"
+    mappings channel: 'official', version: minecraft_version
+}
+
+repositories {
+    minecraft.mavenizer(it)
+    maven fg.forgeMaven
+    maven fg.minecraftLibsMaven
 }
 
 dependencies {
     implementation minecraft.dependency("net.minecraftforge:forge:${minecraft_version}-${forge_version}")
-    annotationProcessor 'net.minecraftforge:eventbus-validator:7.0.5'
 
     implementation project(":common")
-
-    jarJar(implementation("org.snakeyaml:snakeyaml-engine:2.6"))
 }
 
-jar {
+jarJar.register()
+
+dependencies {
+    jarJar 'org.snakeyaml:snakeyaml-engine:2.6'
+}
+
+tasks.named('jarJar') {
+    archiveClassifier = null
+
     from project(':common').sourceSets.main.output
 }
 
+processResources {
+    def version = rootProject.version
+    def minecraft_version_range = project.minecraft_version_range
+    def forge_version_range = project.forge_version_range
+
+    inputs.property "version", version
+    inputs.property "minecraft_version_range", minecraft_version_range
+    inputs.property "forge_version_range", forge_version_range
+
+    filesMatching("META-INF/mods.toml") {
+        expand(
+                version: version,
+                minecraft_version_range: minecraft_version_range,
+                forge_version_range: forge_version_range
+        )
+    }
+}

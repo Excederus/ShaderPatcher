@@ -1,7 +1,5 @@
-package com.excederus.shaderpatcher.platform.forge;
+package com.excederus.shaderpatcher.platform;
 
-import com.excederus.shaderpatcher.platform.LoaderType;
-import com.excederus.shaderpatcher.platform.Platform;
 import com.excederus.shaderpatcher.resource.model.InternalResource;
 import com.excederus.shaderpatcher.resource.model.ResourceCategory;
 import com.excederus.shaderpatcher.resource.model.ResourceSource;
@@ -22,11 +20,6 @@ import static com.excederus.shaderpatcher.Constants.LOG;
 import static com.excederus.shaderpatcher.Constants.MODID;
 
 public class ForgePlatform implements Platform {
-
-    @Override
-    public LoaderType getLoaderType() {
-        return LoaderType.FORGE;
-    }
 
     @Override
     public Path getGameDir() {

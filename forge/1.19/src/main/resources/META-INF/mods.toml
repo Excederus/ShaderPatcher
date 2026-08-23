@@ -17,13 +17,13 @@ description='''Tries to add mod support to any shader'''
 [[dependencies.shaderpatcher]]
 modId="forge"
 mandatory=true
-versionRange="[41,)"
+versionRange="${forge_version_range}"
 ordering="NONE"
 side="BOTH"
 
 [[dependencies.shaderpatcher]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.19,1.20.5)"
+versionRange="${minecraft_version_range}"
 ordering="NONE"
 side="BOTH"

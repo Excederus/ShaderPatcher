@@ -1,23 +1,27 @@
-package com.excederus.shaderpatcher.platform.forge;
+package com.excederus.shaderpatcher;
 
-import com.excederus.shaderpatcher.Constants;
-import com.excederus.shaderpatcher.ShaderPatcher;
+import com.excederus.shaderpatcher.platform.ForgePlatform;
+import com.excederus.shaderpatcher.Constants.*;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod(Constants.MODID)
+@Mod.EventBusSubscriber(modid = Constants.MODID, value = Dist.CLIENT)
 public class ForgeEntrypoint {
 
-    public ForgeEntrypoint() {
-        FMLJavaModLoadingContext.get().getModEventBus()
-                .addListener(this::onClientStarted);
-    }
+    private static boolean initialized = false;
 
-    private void onClientStarted(FMLClientSetupEvent event) {
+    @SubscribeEvent
+    public static void onClientTick(TickEvent.ClientTickEvent event) {
 
-        ShaderPatcher runtime = new ShaderPatcher(new ForgePlatform());
+        if (event.phase != TickEvent.Phase.END || initialized)
+            return;
 
-        runtime.run();
+        initialized = true;
+
+        ShaderPatcher shaderpatcher = new ShaderPatcher(new ForgePlatform());
+        shaderpatcher.run();
     }
 }
