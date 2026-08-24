@@ -315,25 +315,7 @@ public class ShaderpackPatcher {
                     if (!entryNode.identifier().equals(mappingHelperIdentifier))
                         continue;
 
-                    LOG.info(
-                            "BEFORE APPEND {}: {}",
-                            entryNode.identifier(),
-                            entryNode.lines()
-                    );
-
-                    LOG.info(
-                            "VALUES TO APPEND {}: {}",
-                            entryNode.identifier(),
-                            matchedPatchValues
-                    );
-
                     appendPatch(entryNode, matchedPatchValues);
-
-                    LOG.info(
-                            "AFTER APPEND {}: {}",
-                            entryNode.identifier(),
-                            entryNode.lines()
-                    );
                 }
             }
         }
