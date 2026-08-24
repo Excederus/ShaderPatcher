@@ -69,7 +69,7 @@ public class ForgePlatform implements Platform {
                 ResourceCategory category = switch (filenameSplit[0]) {
                     case "block" -> ResourceCategory.BLOCK;
                     case "item" -> ResourceCategory.ITEM;
-                    case "entities" -> ResourceCategory.ENTITY;
+                    case "entity" -> ResourceCategory.ENTITY;
                     default -> null;
                 };
                 if (category == null) {

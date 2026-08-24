@@ -77,13 +77,13 @@ public class ShaderpackPatcher {
                 }
 
                 Resource transform = getApplicableResource(patch.resourceKey(), resourceBundle.transforms());
-                if (transform == null && patch.resourceKey().category().equals(ResourceCategory.BLOCK)) {
+                if (transform == null) {
                     LOG.warn("No transform found for {} {} patch", patch.source(), patch.resourceKey());
                     continue;
-                } else if (transform != null) {
-                    patch = applyTransform(patch, transform);
-                    mapping = applyTransform(mapping, transform);
                 }
+
+                patch = applyTransform(patch, transform);
+                mapping = applyTransform(mapping, transform);
 
                 switch (patch.resourceKey().category()) {
                     case BLOCK -> patchFile(blockFile, shaderpack.block(), patch, mapping);
@@ -315,7 +315,25 @@ public class ShaderpackPatcher {
                     if (!entryNode.identifier().equals(mappingHelperIdentifier))
                         continue;
 
+                    LOG.info(
+                            "BEFORE APPEND {}: {}",
+                            entryNode.identifier(),
+                            entryNode.lines()
+                    );
+
+                    LOG.info(
+                            "VALUES TO APPEND {}: {}",
+                            entryNode.identifier(),
+                            matchedPatchValues
+                    );
+
                     appendPatch(entryNode, matchedPatchValues);
+
+                    LOG.info(
+                            "AFTER APPEND {}: {}",
+                            entryNode.identifier(),
+                            entryNode.lines()
+                    );
                 }
             }
         }

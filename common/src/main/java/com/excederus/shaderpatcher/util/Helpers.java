@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
@@ -18,12 +19,11 @@ public class Helpers {
 
         String namespace = modid == null ? "minecraft:" : modid + ":";
 
-        long colons = value.chars().filter(c -> c == ':').count();
-        if (colons == 0)
-            return namespace + value;
+        String[] parts = value.split(":");
 
-        String right = value.substring(value.indexOf(":") + 1);
-        if (right.contains("="))
+        long identifierParts = Arrays.stream(parts).filter(part -> !part.contains("=")).count();
+
+        if (identifierParts == 1)
             return namespace + value;
 
         return value;
