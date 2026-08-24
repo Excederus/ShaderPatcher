@@ -1,0 +1,38 @@
+SSS:
+  dirt:
+    - dirt_slab
+    - coarse_slab
+    - rooted_dirt_slab
+  mud:
+    - mud_slab
+    - packed_mud_slab
+  snow:
+    - snow_slab
+  moss:
+    - moss_slab
+  grass_block:
+    - grass_slab
+  mycelium:
+    - mycelium_slab
+  podzol:
+    - podzol_slab
+  path:
+    - path_slab
+  gravel:
+    - gravel_slab
+  sand:
+    - sand_slab
+    - red_sand_slab
+    - soul_sand_slab
+    - soul_soil_slab
+  nylium:
+    - warped_nylium_slab
+    - crimson_nylium_slab
+translucent:
+  ice:
+    regular:
+      - ice_slab
+    packed:
+      - packed_ice_slab
+    blue:
+      - blue_ice_slab

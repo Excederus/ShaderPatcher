@@ -1,0 +1,11 @@
+waving:
+  leaves:
+    - walnut_leaves
+    - coconut_leaves
+SSS:
+  plant:
+    - walnut_sapling
+    - coconut_sapling
+  cactus:
+    block:
+      - prickly_pear_cactus_sapling

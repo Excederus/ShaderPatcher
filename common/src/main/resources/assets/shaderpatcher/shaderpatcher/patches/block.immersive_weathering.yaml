@@ -1,0 +1,126 @@
+waving:
+  grass:
+    short:
+      - dune_grass
+      - weeds
+SSS:
+  grass_block:
+    - loam
+    - rooted_grass_block
+    - grassy_sandy_dirt
+    - grassy_silt
+    - grassy_permafrost
+  dirt:
+    - silt
+  mud:
+    - mulch_block
+    - nulch_block
+  farmland:
+    - loamy_farmland
+    - earthen_clay_farmland
+    - sandy_farmland
+    - silty_farmland
+  moss:
+    - mossy_stone
+    - mossy_stone_stairs
+    - mossy_stone_slab
+    - mossy_stone_wall
+    - mossy_bricks
+    - mossy_brick_slab
+    - mossy_brick_stairs
+    - mossy_brick_wall
+  snow:
+    - snowy_stone
+    - snowy_stone_stairs
+    - snowy_stone_slab
+    - snowy_stone_wall
+    - snowy_cobblestone
+    - snowy_cobblestone_stairs
+    - snowy_cobblestone_slab
+    - snowy_cobblestone_wall
+    - snowy_stone_bricks
+    - snowy_stone_brick_stairs
+    - snowy_stone_brick_slab
+    - snowy_stone_brick_wall
+    - snowy_chiseled_stone_bricks
+  sand:
+    - sandy_stone
+    - sandy_stone_stairs
+    - sandy_stone_slab
+    - sandy_stone_wall
+    - sandy_cobblestone
+    - sandy_cobblestone_stairs
+    - sandy_cobblestone_slab
+    - sandy_cobblestone_wall
+    - sandy_stone_bricks
+    - sandy_stone_brick_stairs
+    - sandy_stone_brick_slab
+    - sandy_stone_brick_wall
+    - sandy_chiseled_stone_bricks
+    - sandy_dirt
+    - sand_layer_block
+    - red_sand_layer_block
+    - vitrified_sand
+  plant:
+    - soot
+    - frosty_grass
+    - frosty_fern
+    - ivy
+translucent:
+  glass:
+    regular:
+      - frosty_glass
+    tinted:
+      - tinted_glass
+  ice:
+    regular:
+      - frost
+      - icicle
+      - thin_ice
+special:
+  leaf_litter:
+    - oak_leaf_pile
+    - spruce_leaf_pile
+    - birch_leaf_pile
+    - jungle_leaf_pile
+    - acacia_leaf_pile
+    - cherry_leaf_pile
+    - dark_oak_leaf_pile
+    - mangrove_leaf_pile
+    - ecologics/coconut_leaf_pile
+    - azalea_leaf_pile
+    - flowering_azalea_leaf_pile
+    - arts_and_crafts/cork_leaf_pile
+    - regions_unexplored/alpha_leaf_pile
+    - regions_unexplored/apple_oak_leaf_pile
+    - regions_unexplored/bamboo_leaf_pile
+    - regions_unexplored/baobab_leaf_pile
+    - regions_unexplored/blackwood_leaf_pile
+    - regions_unexplored/magnolia_leaf_pile
+    - regions_unexplored/cypress_leaf_pile
+    - regions_unexplored/dead_leaf_pile
+    - regions_unexplored/dead_pine_leaf_pile
+    - regions_unexplored/eucalyptus_leaf_pile
+    - regions_unexplored/flowering_leaf_pile
+    - regions_unexplored/golden_larch_leaf_pile
+    - regions_unexplored/kapok_leaf_pile
+    - regions_unexplored/larch_leaf_pile
+    - regions_unexplored/maple_leaf_pile
+    - regions_unexplored/mauve_leaf_pile
+    - regions_unexplored/orange_maple_leaf_pile
+    - regions_unexplored/palm_leaf_pile
+    - regions_unexplored/pine_leaf_pile
+    - regions_unexplored/blue_magnolia_leaf_pile
+    - regions_unexplored/pink_magnolia_leaf_pile
+    - regions_unexplored/redwood_leaf_pile
+    - regions_unexplroed/red_maple_leaf_pile
+    - regions_unexplored/brimwood_leaf_pile
+    - regions_unexplored/enchanted_birch_leaf_pile
+    - regions_unexplored/small_oak_leaf_pile
+    - regions_unexplored/silver_birch_leaf_pile
+    - regions_unexplored/socotra_leaf_pile
+    - regions_unexplored/white_magnolia_leaf_pile
+    - regions_unexplored/willow_leaf_pile
+    - regions_unexplored/ashen_leaf_pile
+    - ecologics/walnut_leaf_pile
+    - azalea_flower_pile

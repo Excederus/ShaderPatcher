@@ -1,0 +1,15 @@
+passive:
+  player: player
+  land: sheep
+  water: squid
+  golem: iron_golem
+hostile:
+  human: witch
+  undead: zombie
+  arachnid: spider
+  creeper: creeper
+  blaze: blaze
+  ender: enderman
+  slime: slime
+  magma: magma_cube
+  ghast: ghast

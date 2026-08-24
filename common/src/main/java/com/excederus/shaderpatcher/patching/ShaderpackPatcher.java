@@ -77,13 +77,13 @@ public class ShaderpackPatcher {
                 }
 
                 Resource transform = getApplicableResource(patch.resourceKey(), resourceBundle.transforms());
-                if (transform == null) {
+                if (transform == null && patch.resourceKey().category().equals(ResourceCategory.BLOCK)) {
                     LOG.warn("No transform found for {} {} patch", patch.source(), patch.resourceKey());
                     continue;
+                } else if (transform != null) {
+                    patch = applyTransform(patch, transform);
+                    mapping = applyTransform(mapping, transform);
                 }
-
-                patch = applyTransform(patch, transform);
-                mapping = applyTransform(mapping, transform);
 
                 switch (patch.resourceKey().category()) {
                     case BLOCK -> patchFile(blockFile, shaderpack.block(), patch, mapping);

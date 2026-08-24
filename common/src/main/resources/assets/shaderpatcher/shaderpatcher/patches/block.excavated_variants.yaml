@@ -1,0 +1,85 @@
+special:
+  ore:
+    coal:
+      - red_sandstone_coal_ore
+      - smooth_basalt_coal_ore
+      - granite_coal_ore
+      - dripstone_coal_ore
+      - tuff_coal_ore
+      - calcite_coal_ore
+      - sandstone_coal_ore
+      - diorite_coal_ore
+      - andesite_coal_ore
+    copper:
+      - red_sandstone_copper_ore
+      - smooth_basalt_copper_ore
+      - granite_copper_ore
+      - dripstone_copper_ore
+      - tuff_copper_ore
+      - calcite_copper_ore
+      - sandstone_copper_ore
+      - diorite_copper_ore
+      - andesite_copper_ore
+    iron:
+      - red_sandstone_iron_ore
+      - smooth_basalt_iron_ore
+      - granite_iron_ore
+      - dripstone_iron_ore
+      - tuff_iron_ore
+      - calcite_iron_ore
+      - sandstone_iron_ore
+      - diorite_iron_ore
+      - andesite_iron_ore
+    gold:
+      - red_sandstone_gold_ore
+      - smooth_basalt_gold_ore
+      - granite_gold_ore
+      - dripstone_gold_ore
+      - tuff_gold_ore
+      - calcite_gold_ore
+      - sandstone_gold_ore
+      - diorite_gold_ore
+      - andesite_gold_ore
+    lapis:
+      - red_sandstone_lapis_ore
+      - smooth_basalt_lapis_ore
+      - granite_lapis_ore
+      - dripstone_lapis_ore
+      - tuff_lapis_ore
+      - calcite_lapis_ore
+      - sandstone_lapis_ore
+      - diorite_lapis_ore
+      - andesite_lapis_ore
+    redstone:
+      - red_sandstone_redstone_ore
+      - smooth_basalt_redstone_ore
+      - granite_redstone_ore
+      - dripstone_redstone_ore
+      - tuff_redstone_ore
+      - calcite_redstone_ore
+      - sandstone_redstone_ore
+      - diorite_redstone_ore
+      - andesite_redstone_ore
+    diamond:
+      - red_sandstone_diamond_ore
+      - smooth_basalt_diamond_ore
+      - granite_diamond_ore
+      - dripstone_diamond_ore
+      - tuff_diamond_ore
+      - calcite_diamond_ore
+      - sandstone_diamond_ore
+      - diorite_diamond_ore
+      - andesite_diamond_ore
+    emerald:
+      - red_sandstone_emerald_ore
+      - smooth_basalt_emerald_ore
+      - granite_emerald_ore
+      - dripstone_emerald_ore
+      - tuff_emerald_ore
+      - calcite_emerald_ore
+      - sandstone_emerald_ore
+      - diorite_emerald_ore
+      - andesite_emerald_ore
+    quartz:
+      - basalt_quartz_ore
+      - blackstone_quartz_ore

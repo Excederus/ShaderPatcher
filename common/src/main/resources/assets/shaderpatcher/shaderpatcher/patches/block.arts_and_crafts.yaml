@@ -1,0 +1,7 @@
+waving:
+  leaves:
+    - cork_leaves
+  sapling:
+    - cork_sapling
+  on_water:
+    - lotus_flower

@@ -1,0 +1,22 @@
+emissive:
+  torch:
+    _default: torch
+    regular: torch
+    soul: soul_torch
+    copper: copper_torch
+  lantern:
+    _default: lantern
+    regular: lantern
+    soul: soul_lantern
+    copper: copper_lantern
+  block:
+    _default: glowstone
+    glowstone: glowstone
+    sea: sea_lantern
+    shroom: shroomlight
+    magma: magma_block
+    redstone: redstone_block
+  campfire:
+    _default: campfire
+    regular: campfire
+    soul: soul_campfire

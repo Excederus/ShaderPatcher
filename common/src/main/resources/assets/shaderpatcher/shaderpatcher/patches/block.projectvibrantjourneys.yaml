@@ -1,0 +1,55 @@
+waving:
+  grass:
+    short:
+      - beach_grass
+      - short_grass
+    tall:
+      - cattail
+      - sea_oats
+      - reeds
+      - watergrass
+  flower:
+    small:
+      - crimson_nettle
+      - warped_nettle
+  on_water:
+    - pink_lotus
+  hanging:
+    bottom:
+      - pink_vines
+      - pink_vines_plant
+special:
+  petals:
+    - yellow_wildflowers
+    - mixed_wildflowers
+    - white_wildflowers
+    - orange_wildflowers
+    - serene_wildflowers
+    - purple_wildflowers
+    - sandy_sprouts
+    - blue_wildflowers
+  leaf_litter:
+    - dead_fallen_leaves
+    - fallen_leaves
+SSS:
+  sand:
+    - gilded_red_sand
+  gravel:
+    - gilded_gravel
+    - ferrous_gravel
+  plant:
+    - cindercane
+    - prickly_bush
+  mushroom:
+    plant:
+      - light_brown_bark_mushroom
+      - glowing_blue_fungus
+      - bark_mushroom
+      - orange_bark_mushroom
+      - glowcap
+  cactus:
+    block:
+      - small_cactus
+translucent:
+  ice:
+    - icicle

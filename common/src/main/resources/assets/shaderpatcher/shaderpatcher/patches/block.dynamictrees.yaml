@@ -1,0 +1,51 @@
+waving:
+  leaves:
+    - oak_leaves
+    - spruce_leaves
+    - birch_leaves
+    - jungle_leaves
+    - acacia_leaves
+    - dark_oak_leaves
+    - mangrove_leaves
+    - cherry_leaves
+    - azalea_leaves
+    - flowering_azalea_leaves
+SSS:
+  mushroom:
+    plant:
+      - mega_warped_sapling
+      - mega_crimson_sapling
+      - warped_sapling
+      - crimson_sapling
+      - red_mushroom_sapling
+      - brown_mushroom_sapling
+    stem:
+      - mushroom_stem
+    block:
+      - red_mushroom_cap
+      - red_mushroom_cap_center
+      - brown_mushroom_cap
+      - brown_mushroom_cap_center
+  plant:
+    - mega_spruce_sapling
+    - mega_jungle_sapling
+    - cocoa_sapling
+    - apple_oak_sapling
+    - spruce_sapling
+    - oak_sapling
+    - mangrove_sapling
+    - jungle_sapling
+    - dark_oak_sapling
+    - cherry_sapling
+    - birch_sapling
+    - acacia_sapling
+    - azalea_sapling
+  cactus:
+    block:
+      - saguaro_cactus_sapling
+      - cactus_branch
+      - pipe_cactus_sapling
+      - pillar_cactus_sapling
+  wart_block:
+    - warped_wart
+    - crimson_wart

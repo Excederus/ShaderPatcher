@@ -1,0 +1,47 @@
+waving:
+  grass:
+    short:
+      - crimson_sprouts
+  flower:
+    small:
+      - soul_torchflower
+  crop:
+    - cerebrage
+SSS:
+  plant:
+    - soul_swirls
+    - sorrowsquash
+    - carved_sorrowsquash
+    - ghoul_o_lantern
+    - weeping_ivy
+    - weeping_helix
+    - warped_wart
+    - twisting_ivy
+    - twisting_helix
+  sand:
+    - soul_soil_layer
+    - soul_path
+    - suspicious_soul_sand
+    - ecto_soul_sand
+    - soul_magma_block
+  nylium:
+    - crimson_nylium_path
+    - warped_nylium_path
+  wart_block:
+    - nether_wart_beard
+    - warped_wart_beard
+  mushroom:
+    plant:
+      - warped_sporeshroom
+      - crimson_sporeshroom
+translucent:
+  glass:
+    cyan:
+      - soul_glass
+      - discernment_glass
+  ice:
+    packed:
+      - thin_black_ice
+    blue:
+      - black_ice
+      - black_icicle

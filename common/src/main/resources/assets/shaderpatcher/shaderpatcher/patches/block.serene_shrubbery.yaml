@@ -1,0 +1,50 @@
+waving:
+  flower:
+    small:
+      - twinflower
+      - red_pansies
+      - yellow_pansies
+      - orange_pansies
+      - pink_pansies
+      - purple_pansies
+      - panola_pink_pansies
+      - blue_frost_pansies
+      - sunrise_pansies
+      - halloween_pansies
+      - blue_liverwort
+      - purple_liverwort
+      - white_liverwort
+      - blanketflower_1_flower
+      - blanketflower_double
+      - blanketflower_triple
+      - blanketflower_quad
+      - butterfly_bush
+      - white_butterfly_bush
+      - pink_butterfly_bush
+      - indigo_butterfly_bush
+      - hydrangea
+      - red_hydrangea
+      - white_hydrangea
+      - green_hydrangea
+      - purple_hydrangea
+      - pink_hydrangea
+      - halloween_hydrangea
+      - fireweed
+      - purple_lupine
+      - lupine_pink
+      - lupine_white
+      - golden_lupine
+      - sky_blue_lupine
+      - manhattan_lights_lupine
+      - peach_foxglove
+      - purple_foxglove
+      - white_foxglove
+      - sunset_foxglove
+      - candy_mountain_foxglove
+      - lavender_foxglove
+      - halloween_foxglove
+SSS:
+  cactus:
+    block:
+      - orange_crown_cactus
+      - pink_crown_cactus

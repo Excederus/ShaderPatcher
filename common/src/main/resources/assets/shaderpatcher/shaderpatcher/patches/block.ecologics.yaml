@@ -1,0 +1,31 @@
+waving:
+  leaves:
+    - coconut_leaves
+    - walnut_leaves
+  sapling:
+    - coconut_seedling
+    - walnut_sapling
+  flower:
+    - azalea_flower
+SSS:
+  plant:
+    - coconut
+  snow:
+    - snow_bricks
+    - snow_brick_stairs
+    - snow_brick_slab
+    - snow_brick_wall
+  moss:
+    - surface_moss
+    - moss_layer
+  sand:
+    - sandcastle
+translucent:
+  ice:
+    regular:
+      - thin_ice
+    packed:
+      - ice_bricks
+      - ice_brick_stairs
+      - ice_brick_slab
+      - ice_brick_wall

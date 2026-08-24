@@ -1,0 +1,22 @@
+waving:
+  flower:
+    small:
+      - snowdrop
+      - heather
+      - shaggy_purslane
+      - baileya
+      - busy_lizzie
+      - bloody_dogwood
+      - edelweiss
+      - pontederia
+      - cyan_poppy
+    tall:
+      - drimia
+      - pampas
+special:
+  petals:
+    - passion_flower
+    - wood_sorrel
+    - wood_anemone
+    - hepatica
+    - purple_shamrock

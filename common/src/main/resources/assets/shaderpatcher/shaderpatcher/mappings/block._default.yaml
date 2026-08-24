@@ -19,6 +19,16 @@ special:
   dead_bush: dead_bush
   leaf_litter: leaf_litter
   petals: pink_petals
+  ore:
+    coal: coal_ore
+    copper: copper_ore
+    iron: iron_ore
+    gold: gold_ore
+    lapis: lapis_ore
+    redstone: redstone_ore
+    diamond: diamond_ore
+    emerald: emerald_ore
+    quartz: nether_quartz_ore
 SSS:
   grass_block: grass_block
   dirt: dirt
@@ -44,6 +54,8 @@ SSS:
     block: cactus
     flower: cactus_flower
   bamboo: bamboo
+  snow: snow_block
+  slime: slime_block
 translucent:
   glass:
     _default: glass

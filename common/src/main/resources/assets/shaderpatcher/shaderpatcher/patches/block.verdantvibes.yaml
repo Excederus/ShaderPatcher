@@ -1,0 +1,23 @@
+waving:
+  flower:
+    small:
+      - monstera
+      - snake_plant
+      - parlour_palm
+      - money_tree
+      - lobelia
+      - dragon_tree
+    tall:
+      - cattails
+      - burnweed
+  hanging:
+    side:
+      - ivy
+special:
+  petals:
+    - candy_tuft
+    - periwinkle
+SSS:
+  mushroom:
+    plant:
+      - bracket_mushroom

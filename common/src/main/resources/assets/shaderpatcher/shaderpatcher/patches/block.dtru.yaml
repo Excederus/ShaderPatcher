@@ -1,0 +1,84 @@
+waving:
+  leaves:
+    - bamboo_leaves
+    - alpha_leaves
+    - apple_oak_leaves
+    - ashen_leaves
+    - baobab_leaves
+    - blackwood_leaves
+    - brimwood_leaves
+    - cypress_leaves
+    - dead_leaves
+    - dead_pine_leaves
+    - eucalyptus_leaves
+    - flowering_leaves
+    - joshua_leaves
+    - kapok_leaves
+    - larch_leaves
+    - golden_larch_leaves
+    - magnolia_leaves
+    - blue_magnolia_leaves
+    - pink_magnolia_leaves
+    - white_magnolia_leaves
+    - maple_leaves
+    - orange_maple_leaves
+    - red_maple_leaves
+    - mauve_leaves
+    - palm_leaves
+    - pine_leaves
+    - redwood_leaves
+    - silver_birch_leaves
+    - enchanted_birch_leaves
+    - small_oak_leaves
+    - socotra_leaves
+    - willow_leaves
+SSS:
+  mushroom:
+    plant:
+      - yellow_bioshroom_sapling
+      - pink_bioshroom_sapling
+      - green_bioshroom_sapling
+      - blue_bioshroom_sapling
+    stem:
+      - yellow_bioshroom_branch
+      - pink_bioshroom_branch
+      - green_bioshroom_branch
+      - blue_bioshroom_branch
+    block:
+      - green_bioshroom_cap
+      - green_bioshroom_cap_center
+      - pink_bioshroom_cap
+      - pink_bioshroom_cap_center
+      - yellow_bioshroom_cap
+      - yellow_bioshroom_cap_center
+      - blue_bioshroom_cap
+      - blue_bioshroom_cap_center
+  plant:
+    - white_magnolia_sapling
+    - red_maple_sapling
+    - pink_magnolia_sapling
+    - orange_maple_sapling
+    - magnolia_sapling
+    - joshua_sapling
+    - golden_larch_sapling
+    - enchanted_birch_sapling
+    - blue_magnolia_sapling
+    - willow_sapling
+    - socotra_sapling
+    - silver_birch_sapling
+    - redwood_sapling
+    - pine_sapling
+    - palm_sapling
+    - mauve_sapling
+    - maple_sapling
+    - larch_sapling
+    - kapok_sapling
+    - eucalyptus_sapling
+    - cypress_sapling
+    - brimwood_sapling
+    - blackwood_sapling
+    - baobab_sapling
+    - bamboo_sapling
+    - cobalt_sapling
+  bamboo:
+    - bamboo_branch
