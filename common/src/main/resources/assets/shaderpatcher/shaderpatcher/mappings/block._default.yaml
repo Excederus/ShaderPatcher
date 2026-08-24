@@ -1,8 +1,8 @@
 waving:
   leaves: oak_leaves
   grass:
-    _default: short_grass
-    short: short_grass
+    _default: grass
+    short: grass
     tall: tall_grass
   flower:
     _default: dandelion
