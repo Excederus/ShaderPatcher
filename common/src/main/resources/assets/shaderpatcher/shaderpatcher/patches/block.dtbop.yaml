@@ -1,0 +1,56 @@
+waving:
+  leaves:
+    - origin_leaves
+    - flowering_oak_leaves
+    - cypress_leaves
+    - snowblossom_leaves
+    - rainbow_birch_leaves
+    - fir_leaves
+    - pine_leaves
+    - red_maple_leaves
+    - orange_maple_leaves
+    - yellow_maple_leaves
+    - redwood_leaves
+    - mahogany_leaves
+    - jacaranda_leaves
+    - palm_leaves
+    - willow_leaves
+    - dead_leaves
+    - magic_leaves
+    - umbran_leaves
+    - hellbark_leaves
+    - empyreal_leaves
+SSS:
+  plant:
+    - yellow_maple_sapling
+    - willow_sapling
+    - umbran_sapling
+    - spruce_poplar_sapling
+    - snowblossom_sapling
+    - red_maple_sapling
+    - redwood_sapling
+    - rainbow_birch_sapling
+    - poplar_sapling
+    - pine_sapling
+    - palm_sapling
+    - orange_maple_sapling
+    - mega_umbran_sapling
+    - mega_fir_sapling
+    - mahogany_sapling
+    - magic_poplar_sapling
+    - jacaranda_sapling
+    - hellbark_sapling
+    - flowering_oak_sapling
+    - fir_sapling
+    - dying_sapling
+    - dark_poplar_sapling
+    - aspen_sapling
+  mushroom:
+    plant:
+      - toadstool_sapling
+      - glowshroom_sapling
+    block:
+      - toadstool_cap
+      - toadstool_cap_center
+      - glowshroom_cap
+      - glowshroom_cap_center

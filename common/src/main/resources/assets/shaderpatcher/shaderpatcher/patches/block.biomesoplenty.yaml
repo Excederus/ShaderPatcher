@@ -1,0 +1,135 @@
+waving:
+  leaves:
+    - origin_leaves
+    - flowering_oak_leaves
+    - cypress_leaves
+    - snowblossom_leaves
+    - rainbow_birch_leaves
+    - fir_leaves
+    - pine_leaves
+    - red_maple_leaves
+    - orange_maple_leaves
+    - yellow_maple_leaves
+    - redwood_leaves
+    - mahogany_leaves
+    - jacaranda_leaves
+    - palm_leaves
+    - willow_leaves
+    - dead_leaves
+    - magic_leaves
+    - umbran_leaves
+    - hellbark_leaves
+    - empyreal_leaves
+  sapling:
+    - origin_sapling
+    - flowering_oak_sapling
+    - cypress_sapling
+    - snowblossom_sapling
+    - rainbow_birch_sapling
+    - fir_sapling
+    - pine_sapling
+    - red_maple_sapling
+    - orange_maple_sapling
+    - yellow_maple_sapling
+    - redwood_sapling
+    - mahogany_sapling
+    - jacaranda_sapling
+    - palm_sapling
+    - willow_sapling
+    - dead_sapling
+    - magic_sapling
+    - umbran_sapling
+    - hellbark_sapling
+    - empyreal_sapling
+  hanging:
+    side:
+      - willow_vine
+    hanging:
+      - spanish_moss
+      - spanish_moss_plant
+  grass:
+    short:
+      - sprout
+      - high_grass
+      - dune_grass
+      - desert_grass
+    tall:
+      - barley
+      - sea_oats
+      - cattail
+      - reed
+      - watergrass
+  flower:
+    small:
+      - rose
+      - violet
+      - lavender
+      - white_lavender
+      - orange_cosmos
+      - pink_daffodil
+      - pink_hibiscus
+      - glowflower
+      - wilted_lily
+      - burning_blossom
+      - endbloom
+    tall:
+      - tall_lavender
+      - tall_white_lavender
+      - blue_hydrangea
+      - goldenrod
+      - icy_iris
+  bush:
+    - bush
+    - tundra_shrub
+  on_water:
+    - huge_lily_pad
+    - waterlily
+special:
+  dead_bush:
+    - dead_grass
+  leaf_litter:
+    - red_maple_leaf_pile
+    - orange_maple_leaf_pile
+    - yellow_maple_leaf_pile
+  petals:
+    - wildflower
+    - white_petals
+    - clover
+SSS:
+  grass_block:
+    - origin_grass_block
+  sand:
+    - white_sand
+    - orange_sand
+    - black_sand
+  moss:
+    - mossy_black_sand
+    - glowing_moss_block
+    - glowing_moss_carpet
+  wart_block:
+    - flesh
+    - porous_flesh
+    - flesh_tendons
+    - flesh_tendons_strand
+    - eyebulb
+    - hair
+    - pus_bubble
+  mycelium:
+    - algal_end_stone
+  mushroom:
+    plant:
+      - toadstool
+      - glowshroom
+    block:
+      - toadstool_block
+      - glowshroom_block
+  plant:
+    - huge_clover_petal
+    - enderphyte
+    - lumaloop
+    - lumaloop_plant
+    - bramble
+    - bramble_leaves
+  cactus:
+    block:
+      - tiny_cactus
