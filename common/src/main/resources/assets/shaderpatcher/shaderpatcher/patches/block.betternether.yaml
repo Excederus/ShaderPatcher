@@ -1,0 +1,137 @@
+waving:
+  leaves:
+    - willow_leaves
+    - gloomwood_leaves
+    - bleached_gloomwood_leaves
+    - rubeus_leaves
+    - nether_sakura_leaves
+    - anchor_tree_leaves
+  sapling:
+    - nether_willow_sapling
+    - gloomwood_sapling
+    - rubeus_sapling
+    - mushroom_fir_sapling
+    - anchor_tree_sapling
+    - nether_sakura_sapling
+    - soul_lily_sapling
+  grass:
+    - pale_gloomgrass
+    - gloomgrass
+    - nether_grass
+    - swamp_grass
+    - soul_grass
+    - bone_grass
+    - sepia_bone_grass
+  flower:
+    small:
+      - jungle_plant
+      - feather_fern
+      - neon_equisetum
+SSS:
+  grass_block:
+    - jungle_grass
+    - mushroom_grass
+    - sepia_mushroom_grass
+    - swampland_grass
+  farmland:
+    - farmland
+  moss:
+    - nether_moss
+  mycelium:
+    - nether_mycelium
+  plant:
+    - whispering_gourd
+    - whispering_gourd_lantern
+    - stalagnate_seed
+    - gloomsculk_vine
+    - wart_seed
+    - gray_mold
+    - lucis_spore
+    - giant_mold_sapling
+    - eye_seed
+    - black_vine
+    - blooming_vine
+    - golden_vine
+    - soul_vein
+    - black_bush
+    - ink_bush_seed
+    - egg_plant
+    - black_apple_seed
+    - magma_flower_seed
+    - moss_cover
+    - whispering_gourd_vine
+    - agave
+    - wall_moss
+    - jungle_moss
+    - rubeus_cone
+    - lumabus_seed
+    - golden_lumabus_seed
+    - agave_leaf
+  mushroom:
+    plant:
+      - orange_mushroom
+      - red_mold
+      - jellyfish_mushroom_sapling
+      - bone_mushroom_spores
+      - hook_mushroom
+      - wall_mushroom_brown
+      - wall_mushroom_red
+  cactus:
+    block:
+      - barrel_cactus
+      - nether_cactus
+translucent:
+  glass:
+    regular:
+      - quartz_glass
+      - quartz_glass_framed
+    white:
+      - quartz_glass_framed_white
+      - quartz_glass_white
+    orange:
+      - quartz_glass_framed_orange
+      - quartz_glass_orange
+    magenta:
+      - quartz_glass_framed_magenta
+      - quartz_glass_magenta
+    light_blue:
+      - quartz_glass_framed_light_blue
+      - quartz_glass_light_blue
+    yellow:
+      - quartz_glass_framed_yellow
+      - quartz_glass_yellow
+    lime:
+      - quartz_glass_framed_lime
+      - quartz_glass_lime
+    pink:
+      - quartz_glass_framed_pink
+      - quartz_glass_pink
+    gray:
+      - quartz_glass_framed_gray
+      - quartz_glass_gray
+    light_gray:
+      - quartz_glass_framed_light_gray
+      - quartz_glass_light_gray
+    cyan:
+      - quartz_glass_framed_cyan
+      - quartz_glass_cyan
+    purple:
+      - quartz_glass_framed_purple
+      - quartz_glass_purple
+      - obsidian_glass
+    blue:
+      - quartz_glass_framed_blue
+      - quartz_glass_blue
+      - blue_obsidian_glass
+    brown:
+      - quartz_glass_framed_brown
+      - quartz_glass_brown
+    green:
+      - quartz_glass_framed_green
+      - quartz_glass_green
+    red:
+      - quartz_glass_framed_red
+      - quartz_glass_red
+    black:
+      - quartz_glass_framed_black
+      - quartz_glass_black

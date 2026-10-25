@@ -1,0 +1,35 @@
+SSS:
+  plant:
+    - willow_sapling
+    - willow_leaves
+    - wart_sapling
+    - wart_leaves
+    - rubeus_sapling
+    - rubeus_leaves
+    - old_willow_sapling
+    - old_willow_leaves
+    - nether_sakura_sapling
+    - nether_sakura_leaves
+    - anchor_tree_sapling
+    - anchor_tree_leaves
+  mushroom:
+    plant:
+      - nether_brown_mushroom_sapling
+      - nether_red_mushroom_sapling
+      - crimson_pine_sapling
+      - crimson_glowing_sapling
+      - big_warped_sapling
+    block:
+      - nether_brown_mushroom_cap
+      - nether_brown_mushroom_cap_center
+      - nether_red_mushroom_cap
+      - nether_red_mushroom_cap_center
+      - crimson_pine_cap
+      - crimson_pine_cap_center
+      - crimson_glowing_cap
+      - crimson_glowing_cap_center
+      - big_warped_cap
+      - big_warped_cap_center
+  cactus:
+    block:
+      - nether_cactus_sapling

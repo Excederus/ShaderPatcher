@@ -1,0 +1,165 @@
+SSS:
+  moss:
+    - red_moss_block
+    - red_moss_carpet
+  sand:
+    - sandy_soil
+    - pink_sand
+  mushroom:
+    plant:
+      - shiitake_mushroom
+      - gray_polypore
+    block:
+      - shiitake_mushroom_block
+      - gray_polypore_block
+  plant:
+    - lotus_stem
+  bamboo:
+    - alluaudia
+    - stripped_alluaudia
+waving:
+  grass:
+    tall:
+      - tall_frigid_grass
+      - tall_scorched_grass
+      - tall_beach_grass
+      - tall_sedge_grass
+      - large_flaxen_fern
+      - tall_oat_grass
+      - large_lush_fern
+      - tall_melic_grass
+      - cattail
+    short:
+      - frigid_grass
+      - scorched_grass
+      - beach_grass
+      - sedge_grass
+      - flaxen_fern
+      - oat_grass
+      - lush_fern
+      - melic_grass
+      - green_bitter_sprouts
+      - red_bitter_sprouts
+      - purple_bitter_sprouts
+  flower:
+    small:
+      - green_bearberries
+      - red_bearberries
+      - purple_bearberries
+      - azolla
+      - ornate_succulent
+      - drowsy_succulent
+      - aureate_succulent
+      - sage_succulent
+      - foamy_succulent
+      - imperial_succulent
+      - regal_succulent
+      - marigold
+      - bluebell
+      - tiger_lily
+      - purple_wildflower
+      - yellow_wildflower
+      - red_heather
+      - white_heather
+      - purple_heather
+      - anemone
+      - dwarf_blossoms
+      - protea
+      - hibiscus
+      - blue_iris
+      - black_iris
+      - ruby_blossoms
+      - lotus_flower
+    tall:
+      - lavender
+      - bleeding_heart
+      - blue_bulbs
+      - carnation
+      - gardenia
+      - snapdragon
+      - foxglove
+      - begonia
+      - silverbush
+  on_water:
+    - helvola
+  crop:
+    - desert_turnip_stem
+  leaves:
+    - redwood_leaves
+    - frosty_redwood_leaves
+    - sugi_leaves
+    - wisteria_leaves
+    - white_wisteria_leaves
+    - part_white_wisteria_leaves
+    - blue_wisteria_leaves
+    - part_blue_wisteria_leaves
+    - pink_wisteria_leaves
+    - part_pink_wisteria_leaves
+    - purple_wisteria_leaves
+    - part_purple_wisteria_leaves
+    - frosty_fir_leaves
+    - fir_leaves
+    - willow_leaves
+    - aspen_leaves
+    - yellow_aspen_leaves
+    - red_maple_leaves
+    - orange_maple_leaves
+    - yellow_maple_leaves
+    - cypress_leaves
+    - olive_leaves
+    - joshua_leaves
+    - ghaf_leaves
+    - palo_verde_leaves
+    - cocnut_leaves
+    - cedar_leaves
+    - larch_leaves
+    - mahogany_leaves
+    - saxaul_leaves
+  sapling:
+    - redwood_sapling
+    - sugi_sapling
+    - white_wisteria_sapling
+    - blue_wisteria_sapling
+    - pink_wisteria_sapling
+    - purple_wisteria_sapling
+    - fir_sapling
+    - willow_sapling
+    - aspen_sapling
+    - red_maple_sapling
+    - orange_maple_sapling
+    - yellow_maple_sapling
+    - cypress_sapling
+    - olive_sapling
+    - joshua_sapling
+    - ghaf_sapling
+    - palo_verde_sapling
+    - coconut_sprout
+    - cedar_sapling
+    - larch_sapling
+    - mahogany_sapling
+    - saxaul_sapling
+  hanging:
+    bottom:
+      - white_wisteria_vines
+      - blue_wisteria_vines
+      - pink_wisteria_vines
+      - purple_wisteria_vines
+      - willow_vines
+special:
+  ore:
+    gold:
+      - chert_gold_ore
+    iron:
+      - chert_iron_ore
+    coal:
+      - chert_coal_ore
+    lapis:
+      - chert_lapis_ore
+    diamond:
+      - chert_diamond_ore
+    redstone:
+      - chert_redstone_ore
+    emerald:
+      - chert_emerald_ore
+    copper:
+      - chert_copper_ore

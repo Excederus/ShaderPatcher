@@ -1,0 +1,56 @@
+waving:
+  leaves:
+    - redwood_leaves
+    - frosty_redwood_leaves
+    - sugi_leaves
+    - wisteria_leaves
+    - white_wisteria_leaves
+    - part_white_wisteria_leaves
+    - blue_wisteria_leaves
+    - part_blue_wisteria_leaves
+    - pink_wisteria_leaves
+    - part_pink_wisteria_leaves
+    - purple_wisteria_leaves
+    - part_purple_wisteria_leaves
+    - frosty_fir_leaves
+    - fir_leaves
+    - willow_leaves
+    - aspen_leaves
+    - yellow_aspen_leaves
+    - red_maple_leaves
+    - orange_maple_leaves
+    - yellow_maple_leaves
+    - cypress_leaves
+    - olive_leaves
+    - joshua_leaves
+    - ghaf_leaves
+    - palo_verde_leaves
+    - cocnut_leaves
+    - cedar_leaves
+    - larch_leaves
+    - mahogany_leaves
+    - saxaul_leaves
+SSS:
+  plant:
+    - redwood_sapling
+    - sugi_sapling
+    - white_wisteria_sapling
+    - blue_wisteria_sapling
+    - pink_wisteria_sapling
+    - purple_wisteria_sapling
+    - fir_sapling
+    - willow_sapling
+    - aspen_sapling
+    - red_maple_sapling
+    - orange_maple_sapling
+    - yellow_maple_sapling
+    - cypress_sapling
+    - olive_sapling
+    - joshua_sapling
+    - ghaf_sapling
+    - palo_verde_sapling
+    - coconut_sprout
+    - cedar_sapling
+    - larch_sapling
+    - mahogany_sapling
+    - saxaul_sapling

@@ -1,0 +1,22 @@
+waving:
+  leaves:
+    - warm_blossom_leaves
+    - sunny_blossom_leaves
+    - serene_blossom_leaves
+    - frosty_blossom_leaves
+    - fiery_blossom_leaves
+    - ashen_leaves
+SSS:
+  plant:
+    - warm_blossom_sapling
+    - sunny_blossom_sapling
+    - serene_blossom_sapling
+    - frosty_blossom_sapling
+    - fiery_blossom_sapling
+    - ashen_sapling
+  mushroom:
+    plant:
+      - glow_shroom_sapling
+    block:
+      - glow_shroom_cap
+      - glow_shroom_cap_center

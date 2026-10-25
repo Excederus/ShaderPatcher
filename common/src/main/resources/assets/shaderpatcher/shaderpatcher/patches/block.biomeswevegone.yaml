@@ -1,0 +1,275 @@
+waving:
+  flower:
+    small:
+      - pink_allium
+      - white_allium
+      - rose
+      - osiria_rose
+      - black_rose
+      - cyan_rose
+      - cyan_tulip
+      - green_tulip
+      - magenta_tulip
+      - purple_tulip
+      - yellow_tulip
+      - amaranth
+      - cyan_amaranth
+      - magenta_amaranth
+      - orange_amaranth
+      - purple_amaranth
+      - blue_sage
+      - purple_sage
+      - white_sage
+      - daffodil
+      - pink_daffodil
+      - yellow_daffodil
+      - pink_anemone
+      - white_anemone
+      - pine_bellflower
+      - lazarus_bellflower
+      - peach_leather_flower
+      - violet_leather_flower
+      - angelica
+      - begonia
+      - bistort
+      - california_poppy
+      - crocus
+      - fairy_slipper
+      - guzmania
+      - incan_lily
+      - iris
+      - kovan_flower
+      - lollipop_flower
+      - orange_daisy
+      - protea_flower
+      - richea
+      - silver_vase_flower
+      - snowdrops
+      - winter_cyclamen
+      - winter_rose
+      - winter_scilla
+      - horseweed
+      - winter_succulent
+    tall:
+      - tall_allium
+      - tall_pink_allium
+      - tall_white_allium
+      - cyan_pitcher_plant
+      - magenta_pitcher_plant
+      - blue_rose_bush
+      - delphinium
+      - foxglove
+      - japanese_orchid
+  leaves:
+    - aspen_leaves
+    - baobab_leaves
+    - blue_enchanted_leaves
+    - cika_leaves
+    - cypress_leaves
+    - ebony_leaves
+    - fir_leaves
+    - green_enchanted_leaves
+    - holly_leaves
+    - ironwood_leaves
+    - jacaranda_leaves
+    - mahogany_leaves
+    - maple_leaves
+    - palm_leaves
+    - pine_leaves
+    - rainbow_eucalyptus_leaves
+    - redwood_leaves
+    - skyris_leaves
+    - white_mangrove_leaves
+    - willow_leaves
+    - witch_hazel_leaves
+    - zelkova_leaves
+    - palo_verde_leaves
+    - araucaria_leaves
+    - ripe_baobab_leaves
+    - flowering_baobab_leaves
+    - blue_spruce_leaves
+    - blooming_witch_hazel_leaves
+    - brown_birch_leaves
+    - brown_oak_leaves
+    - brown_zelkova_leaves
+    - ripe_orchard_leaves
+    - flowering_orchard_leaves
+    - flowering_palo_verde_leaves
+    - holly_berry_leaves
+    - indigo_jacaranda_leaves
+    - flowering_jacaranda_leaves
+    - flowering_indigo_jacaranda_leaves
+    - yucca_leaves
+    - ripe_yucca_leaves
+    - flowering_yucca_leaves
+    - orange_birch_leaves
+    - orange_oak_leaves
+    - orange_spruce_leaves
+    - orchard_leaves
+    - red_birch_leaves
+    - red_oak_leaves
+    - red_spruce_leaves
+    - red_maple_leaves
+    - silver_maple_leaves
+    - spirit_leaves
+    - flowering_spirit_leaves
+    - green_apple_skyris_leaves
+    - flowering_skyris_leaves
+    - flowering_ironwood_leaves
+    - white_sakura_leaves
+    - yellow_sakura_leaves
+    - yellow_birch_leaves
+    - yellow_spruce_leaves
+    - firecracker_leaves
+  sapling:
+    - aspen_sapling
+    - baobab_sapling
+    - blue_enchanted_sapling
+    - cika_sapling
+    - cypress_sapling
+    - ebony_sapling
+    - fir_sapling
+    - green_enchanted_sapling
+    - holly_sapling
+    - ironwood_sapling
+    - jacaranda_sapling
+    - mahogany_sapling
+    - maple_sapling
+    - palm_sapling
+    - pine_sapling
+    - rainbow_eucalyptus_sapling
+    - redwood_sapling
+    - white_sakura_sapling
+    - yellow_sakura_sapling
+    - skyris_sapling
+    - spirit_sapling
+    - white_mangrove_sapling
+    - willow_sapling
+    - witch_hazel_sapling
+    - zelkova_sapling
+    - palo_verde_sapling
+    - araucaria_sapling
+    - blue_spruce_sapling
+    - brown_birch_sapling
+    - brown_oak_sapling
+    - brown_zelkova_sapling
+    - indigo_jacaranda_sapling
+    - orange_birch_sapling
+    - orange_oak_sapling
+    - orange_spruce_sapling
+    - orchard_sapling
+    - red_birch_sapling
+    - red_oak_sapling
+    - red_spruce_sapling
+    - red_maple_sapling
+    - silver_maple_sapling
+    - yellow_birch_sapling
+    - yellow_spruce_sapling
+    - yucca_sapling
+  bush:
+    - hydrangea_bush
+    - shrub
+    - firecracker_flower_bush
+  grass:
+    tall:
+      - tall_prairie_grass
+      - tall_beach_grass
+    short:
+      - prairie_grass
+      - beach_grass
+  hanging:
+    side:
+      - poison_ivy
+      - skyris_vine
+    bottom:
+      - witch_hazel_blossom
+  on_water:
+    - tiny_lily_pads
+    - flowering_tiny_lily_pads
+    - water_silk
+SSS:
+  mud:
+    - peat
+    - lush_dirt
+    - pale_mud
+  sand:
+    - sandy_dirt
+    - black_sand
+    - white_sand
+    - blue_sand
+    - purple_sand
+    - pink_sand
+    - windswept_sand
+    - cracked_sand
+    - cracked_red_sand
+    - quicksand
+    - red_quicksand
+  path:
+    - sandy_dirt_path
+    - lush_dirt_path
+  farmland:
+    - sandy_farmland
+    - lush_farmland
+  grass_block:
+    - lush_grass_block
+    - overgrown_dacite
+    - white_overgrown_dacite
+    - overgrown_stone
+  plant:
+    - jacaranda_bush
+    - indigo_jacaranda_bush
+    - hydrangea_hedge
+    - allium_petal_block
+    - pink_allium_petal_block
+    - white_allium_petal_block
+    - rose_petal_block
+    - witch_hazel_branch
+    - cattail_thatch
+    - cattail_thatch_carpet
+    - pale_pumpkin
+    - carved_pale_pumpkin
+    - pale_jack_o_lantern
+    - pale_pumpkin_stem
+    - pumpkin_burrow
+    - cattail_sprout
+    - fluorescent_cattail_sprout
+  mushroom:
+    block:
+      - green_mushroom_block
+      - weeping_milkcap_mushroom_blockwood_blewit_mushroom_block
+    stem:
+      - white_mushroom_stem
+      - brown_mushroom_stem
+    plant:
+      - green_mushroom
+      - weeping_milkcap
+      - wood_blewit
+      - shelf_fungi
+  cactus:
+    block:
+      - mini_cactus
+      - prickly_pear_cactus
+      - golden_spined_cactus
+      - barrel_cactus
+      - flowering_barrel_cactus
+      - carved_barrel_cactus
+      - aloe_vera
+  podzol:
+    - podzol_dacite
+    - white_podzol_dacite
+translucent:
+  ice:
+    regular:
+      - black_ice
+      - borealis_ice
+    packed:
+      - packed_black_ice
+      - packed_borealis_ice
+special:
+  leaf_litter:
+    - leaf_pile
+    - clover_patch
+  petals:
+    - flower_patch
+    - white_sakura_petals
+    - yellow_sakura_petals

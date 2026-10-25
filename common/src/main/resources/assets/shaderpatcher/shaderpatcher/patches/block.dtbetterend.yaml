@@ -1,0 +1,27 @@
+SSS:
+  cactus:
+    block:
+      - neon_cactus_sapling
+  plant:
+    - umbrella_tree_sapling
+    - tenanea_sapling
+    - pythadendron_sapling
+    - mossy_glowshroom_sapling
+    - lucernia_sapling
+    - lacugrove_sapling
+    - jellyshroom_sapling
+    - helix_tree_sapling
+    - dragon_tree_sapling
+    - dragon_helix_tree_sapling
+    - amaranita_sapling
+    - umbrella_tree_leaves
+    - tenanea_leaves
+    - pythadendron_leaves
+    - mossy_glowshroom_leaves
+    - lucernia_leaves
+    - lacugrove_leaves
+    - jellyshroom_leaves
+    - helix_tree_leaves
+    - dragon_tree_leaves
+    - dragon_helix_tree_leaves
+    - amaranita_leaves

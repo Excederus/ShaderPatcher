@@ -56,6 +56,7 @@ SSS:
   bamboo: bamboo
   snow: snow_block
   slime: slime_block
+  wool: white_wool
 translucent:
   glass:
     _default: glass
@@ -82,3 +83,5 @@ translucent:
     regular: ice
     packed: packed_ice
     blue: blue_ice
+  slime: slime_block
+  honey: honey_block

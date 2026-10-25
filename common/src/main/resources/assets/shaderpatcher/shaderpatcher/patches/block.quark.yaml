@@ -1,0 +1,104 @@
+waving:
+  grass:
+    - chorus_weeds
+    - chorus_twist
+    - glow_lichen_growth
+  leaves:
+    - oak_hedge
+    - spruce_hedge
+    - birch_hedge
+    - jungle_hedge
+    - acacia_hedge
+    - dark_oak_hedge
+    - mangrove_hedge
+    - cherry_hedge
+    - azalea_hedge
+    - flowering_azalea_hedge
+    - blue_blossom_hedge
+    - lavender_blossom_hedge
+    - orange_blossom_hedge
+    - yellow_blossom_hedge
+    - red_blossom_hedge
+    - ancient_hedge
+    - ancient_leaves
+    - blue_blossom_leaves
+    - lavender_blossom_leaves
+    - orange_blossom_leaves
+    - yellow_blossom_leaves
+    - red_blossom_leaves
+  sapling:
+    - ancient_sapling
+    - blue_blossom_sapling
+    - lavender_blossom_sapling
+    - orange_blossom_sapling
+    - yellow_blossom_sapling
+    - red_blossom_sapling
+SSS:
+  bamboo:
+    - paper_wall_big
+    - paper_wall
+    - paper_wall_sakura
+  mushroom:
+    plant:
+      - glow_shroom_ring
+      - glow_shroom
+    block:
+      - glow_shroom_block
+    stem:
+      - glow_shroom_stem
+translucent:
+  glass:
+    regular:
+      - framed_glass
+    tinted:
+      - dirty_glass
+    pink:
+      - pink_framed_glass
+    magenta:
+      - magenta_framed_glass
+    purple:
+      - purple_framed_glass
+    blue:
+      - blue_framed_glass
+    light_blue:
+      - light_blue_framed_glass
+    cyan:
+      - cyan_framed_glass
+    green:
+      - green_framed_glass
+    lime:
+      - lime_framed_glass
+    yellow:
+      - yellow_framed_glass
+    orange:
+      - orange_framed_glass
+    red:
+      - red_framed_glass
+    brown:
+      - brown_framed_glass
+    black:
+      - black_framed_glass
+    gray:
+      - gray_framed_glass
+    light_gray:
+      - light_gray_framed_glass
+    white:
+      - white_framed_glass
+special:
+  leaf_litter:
+    - oak_leaf_carpet
+    - spruce_leaf_carpet
+    - birch_leaf_carpet
+    - jungle_leaf_carpet
+    - acacia_leaf_carpet
+    - dark_oak_leaf_carpet
+    - mangrove_leaf_carpet
+    - cherry_leaf_carpet
+    - azalea_leaf_carpet
+    - flowering_azalea_leaf_carpet
+    - ancient_leaf_carpet
+    - blue_blossom_leaf_carpet
+    - lavender_blossom_leaf_carpet
+    - orange_blossom_leaf_carpet
+    - yellow_blossom_leaf_carpet
+    - red_blossom_leaf_carpet

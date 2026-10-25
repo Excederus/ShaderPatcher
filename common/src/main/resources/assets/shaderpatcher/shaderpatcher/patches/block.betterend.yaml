@@ -1,0 +1,186 @@
+waving:
+  leaves:
+    - tenanea_outer_leaves
+    - lucernia_outer_leaves
+    - pythadendron_leaves
+    - lacugrove_leaves
+    - dragon_tree_leaves
+    - tenanea_leaves
+    - helix_tree_leaves
+    - lucernia_leaves
+  hanging:
+    bottom:
+      - tenanea_flowers
+  grass:
+    short:
+      - murkweed
+      - needlegrass
+      - chorus_grass
+      - cave_grass
+      - crystal_grass
+      - bushy_grass
+      - amber_grass
+      - jungle_grass
+  sapling:
+    - mossy_glowshroom_sapling
+    - pythadendron_sapling
+    - lacugrove_sapling
+    - dragon_tree_sapling
+    - tenanea_sapling
+    - helix_tree_sapling
+    - umbrella_tree_sapling
+    - lucernia_sapling
+  flower:
+    small:
+      - umbrella_moss
+      - creeping_moss
+      - shadow_plant
+      - twisted_umbrella_moss
+      - blooming_cooksonia
+      - salteago
+      - viaolush_fern
+      - fracturn
+      - clawfern
+      - globulagus
+      - orango
+      - aeridium
+      - lutebus
+      - lamellarium
+      - inflexia
+      - flammalix
+      - cave_moss
+      - cyan_moss
+      - twisted_moss
+      - bulb_moss
+      - jungle_fern
+      - ruscus
+    tall:
+      - tall_umbrella_moss
+      - twisted_umbrella_moss_tall
+  crop:
+    - amber_root_seed
+  on_water:
+    - flamaea
+SSS:
+  sand:
+    - endstone_dust
+  mycelium:
+    - end_mycelium
+  moss:
+    - end_moss
+    - cave_moss
+    - crystal_moss
+    - pink_moss
+    - amber_moss
+    - jungle_moss
+    - mossy_obsidian
+    - mossy_dragon_bone
+  nylium:
+    - chorus_nylium
+    - shadow_grass
+    - sangnum
+    - rutiscus
+  path:
+    - end_mycelium_path
+    - end_moss_path
+    - chorus_nylium_path
+    - cave_moss_path
+    - crystal_moss_path
+    - shadow_grass_path
+    - pink_moss_path
+    - amber_moss_path
+    - jungle_moss_path
+    - sangnum_path
+    - rutiscus_path
+  snow:
+    - dense_snow
+  mushroom:
+    plant:
+      - purple_polypore
+      - aurant_polypore
+      - small_jellyshroom
+      - bolux_mushroom
+      - small_amaranita_mushroom
+      - chorus_mushroom_seed
+    block:
+      - mossy_glowshroom_cap
+      - amaranita_cap
+    stem:
+      - mossy_glowshroom_hymenophore
+      - amaranita_stem
+      - amaranita_hyphae
+      - amaranita_hymenophore
+  plant:
+    - mossy_glowshroom_fur
+    - blue_vine_fur
+    - glowing_pillar_leaves
+    - amaranita_fur
+    - cave_pumpkin
+    - hydralux_petal_block
+    - hydralux_petal_block_white
+    - hydralux_petal_block_orange
+    - hydralux_petal_block_magenta
+    - hydralux_petal_block_light_blue
+    - hydralux_petal_block_yellow
+    - hydralux_petal_block_lime
+    - hydralux_petal_block_pink
+    - hydralux_petal_block_gray
+    - hydralux_petal_block_light_gray
+    - hydralux_petal_block_cyan
+    - hydralux_petal_block_purple
+    - hydralux_petal_block_blue
+    - hydralux_petal_block_brown
+    - hydralux_petal_block_green
+    - hydralux_petal_block_red
+    - hydralux_petal_block_black
+    - end_lily_leaf
+    - end_lily_leaf_dried
+    - umbrella_tree_membrane
+    - lanceleaf
+    - glowing_pillar_roots
+    - blue_vine
+    - lumecorn
+    - shadow_berry
+    - blossom_berry_seed
+    - end_lotus_seed
+    - blue_vine_seed
+    - lanceleaf_seed
+    - glowing_pillar_seed
+    - cave_pumpkin_seed
+    - bubble_coral
+    - charnia_red
+    - charnia_purple
+    - charnia_orange
+    - charnia_light_blue
+    - charnia_cyan
+    - charnia_green
+    - end_lily_seed
+    - hydralux_sapling
+    - pond_anemone
+    - cave_bush
+    - tube_worm
+    - dense_vine
+    - twisted_vine
+    - bulb_vine_seed
+    - bulb_vine
+    - jungle_vine
+    - rubinea
+    - magnula
+    - filalux
+    - filalux_wings
+  cactus:
+    block:
+      - neon_cactus
+      - neon_cactus_block
+      - neon_cactus_stairs
+      - neon_cactus_slab
+translucent:
+  ice:
+    regular:
+      - emerald_ice
+    packed:
+      - dense_emerald_ice
+    blue:
+      - ancient_emerald_ice
+  slime:
+    - purple_jellyshroom_cap
