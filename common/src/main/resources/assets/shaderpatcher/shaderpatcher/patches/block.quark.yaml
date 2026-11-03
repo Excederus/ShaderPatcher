@@ -4,6 +4,21 @@ waving:
     - chorus_twist
     - glow_lichen_growth
   leaves:
+    - ancient_leaves
+    - blue_blossom_leaves
+    - lavender_blossom_leaves
+    - orange_blossom_leaves
+    - yellow_blossom_leaves
+    - red_blossom_leaves
+  sapling:
+    - ancient_sapling
+    - blue_blossom_sapling
+    - lavender_blossom_sapling
+    - orange_blossom_sapling
+    - yellow_blossom_sapling
+    - red_blossom_sapling
+SSS:
+  plant:
     - oak_hedge
     - spruce_hedge
     - birch_hedge
@@ -20,20 +35,6 @@ waving:
     - yellow_blossom_hedge
     - red_blossom_hedge
     - ancient_hedge
-    - ancient_leaves
-    - blue_blossom_leaves
-    - lavender_blossom_leaves
-    - orange_blossom_leaves
-    - yellow_blossom_leaves
-    - red_blossom_leaves
-  sapling:
-    - ancient_sapling
-    - blue_blossom_sapling
-    - lavender_blossom_sapling
-    - orange_blossom_sapling
-    - yellow_blossom_sapling
-    - red_blossom_sapling
-SSS:
   bamboo:
     - paper_wall_big
     - paper_wall

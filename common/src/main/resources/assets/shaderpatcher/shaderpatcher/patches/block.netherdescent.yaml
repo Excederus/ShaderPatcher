@@ -1,0 +1,70 @@
+waving:
+  grass:
+    short:
+      - wailing_grass
+      - embur_roots
+      - arisian_sprouts
+    tall:
+      - tall_embur_roots
+      - tall_arisian_sprouts
+      - tall_crimson_roots
+  flower:
+    small:
+      - arisian_blossom
+      - arisian_dandelions
+    tall:
+      - tall_arisian_dandelions
+  sapling:
+    - arisian_sapling
+  leaves:
+    - arisian_leaves
+SSS:
+  dirt:
+    - sythian_soil
+  farmland:
+    - sythian_farmland
+  nylium:
+    - wailing_nylium
+    - embur_nylium
+    - sythian_nylium
+    - crimson_blackstone_nylium
+  wart_block:
+    - wailing_wart_block
+    - sythian_wart_block
+  plant:
+    - wailing_bulb_blossom
+    - embur_sprouts
+    - embur_lily
+    - arisian_branch
+    - thorn_sprout
+    - sythian_sprouts
+    - sythian_roots
+  moss:
+    - embur_cave_moss
+    - embur_moss_block
+    - embur_moss_carpet
+    - embur_hanging_moss
+    - arisian_moss_block
+    - arisian_moss_carpet
+    - crimson_carpet
+  hanging:
+    - embur_gel_vines
+    - embur_gel_vines_plant
+    - wailing_vines
+    - wailing_vines_plant
+    - arisian_tangle_roots
+    - arisian_tangle_roots_plant
+    - hanging_sythian_roots
+    - hanging_sythian_roots_plant
+  mushroom:
+    plant:
+      - wailing_fungus
+      - embur_wart
+      - sythian_fungus
+      - fungal_bulbs
+      - tall_crimson_fungi
+  slime:
+    - embur_gel_block
+  bamboo:
+    - sythian_stalk
+    - sythian_shoot
