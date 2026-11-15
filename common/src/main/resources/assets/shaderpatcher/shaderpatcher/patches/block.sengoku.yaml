@@ -1,0 +1,38 @@
+waving:
+  leaves:
+    - bloodgood_leaves
+    - weeping_willow_leaves
+    - weeping_blossom_leaves
+    - autumnal_oak_leaves
+    - autumnal_black_pine_leaves
+    - autumnal_dark_cedar_leaves
+    - autumnal_keyaki_leaves
+    - autumnal_kiso_leaves
+    - autumnal_mangrove_leaves
+    - ginkgo_leaves
+    - autumnal_birch_leaves
+    - maple_leaves
+  sapling:
+    - ginkgo_sapling
+    - maple_sapling
+  crop:
+    - ramie_crop
+    - tea_crop
+    - rice_crop
+SSS:
+  sand:
+    - iron_sand
+    - shiki_sand
+    - shirakawa_suna
+  gravel:
+    - shiki_gravel
+  hanging:
+    - lavender_vines
+  plant:
+    - weeping_willow_vines
+    - mangrove_vines
+    - sakura_vines
+    - pale_reeds_block
+    - dark_reeds_block
+  farmland:
+    - coarse_farmland
