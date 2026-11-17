@@ -101,6 +101,8 @@ waving:
       - ru/biomesoplenty/flowering_oak_shrub
       - ru/biomesoplenty/fir_shrub
       - ru/cobblemon/saccharine_shrub
+      - ru/sengoku/ginkgo_shrub
+      - ru/sengoku/maple_shrub
 SSS:
   plant:
     - q/minecraft/pale_oak_hedge
@@ -263,6 +265,18 @@ SSS:
     - q/regions_unexplored/willow_hedge
     - q/cobblemon/apricorn_hedge
     - q/cobblemon/saccharine_hedge
+    - q/sengoku/bloodgood_hedge
+    - q/sengoku/weeping_willow_hedge
+    - q/sengoku/weeping_blossom_hedge
+    - q/sengoku/autumnal_oak_hedge
+    - q/sengoku/autumnal_black_pine_hedge
+    - q/sengoku/autumnal_dark_cedar_hedge
+    - q/sengoku/autumnal_keyaki_hedge
+    - q/sengoku/autumnal_kiso_hedge
+    - q/sengoku/autumnal_mangrove_hedge
+    - q/sengoku/ginkgo_hedge
+    - q/sengoku/autumnal_birch_hedge
+    - q/sengoku/maple_hedge
 special:
   leaf_litter:
     - q/minecraft/pale_oak_leaf_carpet
@@ -411,3 +425,15 @@ special:
     - q/regions_unexplored/flowering_leaf_carpet
     - q/cobblemon/apricorn_leaf_carpet
     - q/cobblemon/saccharine_leaf_carpet
+    - q/sengoku/bloodwood_leaf_carpet
+    - q/sengoku/weeping_willow_leaf_carpet
+    - q/sengoku/weeping_blossom_leaf_carpet
+    - q/sengoku/autumnal_oak_leaf_carpet
+    - q/sengoku/autumnal_black_pine_leaf_carpet
+    - q/sengoku/autumnal_dark_cedar_leaf_carpet
+    - q/sengoku/autumnal_keyaki_leaf_carpet
+    - q/sengoku/autumnal_kiso_leaf_carpet
+    - q/sengoku/autumnal_mangrove_leaf_carpet
+    - q/sengoku/ginkgo_leaf_carpet
+    - q/sengoku/autumnal_birch_leaf_carpet
+    - q/sengoku/maple_leaf_carpet

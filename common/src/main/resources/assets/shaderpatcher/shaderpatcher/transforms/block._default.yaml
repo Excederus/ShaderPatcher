@@ -7,6 +7,10 @@ waving:
     tall:
       - ":half=lower"
       - ":half=upper"
+  leaves:
+    - ""
+    - ":waterlogged=true"
+    - ":waterlogged=false"
 SSS:
   grass_block:
     - ":snowy=false"
