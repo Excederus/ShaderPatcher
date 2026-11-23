@@ -23,7 +23,7 @@ processResources {
 }
 
 shadowJar {
-    archiveBaseName = mod_id
+    archiveBaseName = 'ShaderPatcher'
     archiveClassifier = ''
     addMultiReleaseAttribute = false
     relocate 'org.yaml.snakeyaml', "${mod_group}.shaded.snakeyaml"
