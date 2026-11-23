@@ -1,0 +1,6 @@
+dependencies {
+    api project(':common')
+    compileOnly "net.minecraftforge:fmlloader:${forge_version}"
+    compileOnly "net.minecraftforge:fmlcore:${forge_version}"
+    compileOnly "net.minecraftforge:javafmllanguage:${forge_version}"
+}

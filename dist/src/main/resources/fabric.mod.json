@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+  "name": "Shader Patcher",
+  "environment": "client",
+  "entrypoints": {
+    "preLaunch": ["com.excederus.shaderpatcher.loader.fabric.FabricEntrypoint"]
+  },
+  "depends": { "fabricloader": ">=0.14.0" }
+}

@@ -1,10 +1,5 @@
 package com.excederus.shaderpatcher.resource.model;
 
-import org.jetbrains.annotations.Nullable;
-
-public record MappingKey(
-        String category,
-        String concept,
-        @Nullable String variant
-) {
+/** Identifies a leaf path inside a parsed YAML resource, e.g. {@code waving.flower.small}. */
+public record MappingKey(String type, String concept, String variant) {
 }

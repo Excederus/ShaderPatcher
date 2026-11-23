@@ -1,48 +1,35 @@
-plugins {
-    id 'java'
-}
-
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
-
 dependencies {
-    implementation 'org.snakeyaml:snakeyaml-engine:2.6'
+    api "org.yaml:snakeyaml:${snakeyaml_version}"
+    compileOnly "org.slf4j:slf4j-api:${slf4j_version}"
 
-    compileOnly 'org.slf4j:slf4j-api:2.0.7'
-    compileOnly 'commons-io:commons-io:2.13.0'
-    compileOnly 'org.jetbrains:annotations:24.0.1'
+    testImplementation platform('org.junit:junit-bom:5.11.3')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation "org.slf4j:slf4j-api:${slf4j_version}"
+    testRuntimeOnly "org.slf4j:slf4j-simple:${slf4j_version}"
 }
-
-
 
 def generatedSourcesDir = layout.buildDirectory.dir("generated/sources/version/main")
 
 tasks.register("generateConstants") {
     def outputDir = generatedSourcesDir.get().asFile
+    def modId = mod_id
+    def modVersion = mod_version
 
     outputs.dir(outputDir)
 
     doLast {
-        def packageDir = new File(
-                outputDir,
-                "com/excederus/shaderpatcher"
-        )
+        def packageDir = new File(outputDir, "com/excederus/shaderpatcher")
         packageDir.mkdirs()
 
         new File(packageDir, "Constants.java").text = """
 package com.excederus.shaderpatcher;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public final class Constants {
 
-    public static final String MODID = "${modid}";
-    public static final String MODNAME = "${modname}";
-    public static final String MODVERSION = "${version}";
-    public static final String MODTAG = MODID + "-" + MODVERSION;
-    
-    public static final Logger LOG = LoggerFactory.getLogger(MODNAME);
-    
+    public static final String MOD_ID = "${modId}";
+    public static final String MOD_VERSION = "${modVersion}";
+
     private Constants() {}
 }
 """
