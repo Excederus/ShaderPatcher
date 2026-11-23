@@ -1,0 +1,38 @@
+plugins {
+    id 'com.gradleup.shadow'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+dependencies {
+    implementation project(':common')
+    runtimeOnly project(':fabric')
+    runtimeOnly project(':forge')
+    runtimeOnly project(':neoforge')
+}
+
+processResources {
+    def props = [mod_id: mod_id, mod_version: mod_version]
+    inputs.properties(props)
+    filesMatching(['fabric.mod.json', 'META-INF/mods.toml', 'META-INF/neoforge.mods.toml']) {
+        expand(props)
+    }
+}
+
+shadowJar {
+    archiveBaseName = mod_id
+    archiveClassifier = ''
+    addMultiReleaseAttribute = false
+    relocate 'org.yaml.snakeyaml', "${mod_group}.shaded.snakeyaml"
+    exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA'
+    exclude 'META-INF/versions/**'
+    exclude 'module-info.class'
+
+    manifest.attributes('Multi-Release': 'false')
+}
+
+jar { archiveClassifier = 'thin' }
+assemble.dependsOn shadowJar

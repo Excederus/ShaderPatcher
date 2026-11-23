@@ -1,0 +1,35 @@
+plugins {
+    id 'com.gradleup.shadow' version '9.6.1' apply false
+}
+
+def commonRelease = common_java_release.toInteger()
+
+subprojects {
+    apply plugin: 'java-library'
+
+    group = mod_group
+    version = mod_version
+
+    repositories {
+        mavenCentral()
+        maven { url = 'https://maven.fabricmc.net/' }
+        maven { url = 'https://maven.minecraftforge.net/' }
+        maven { url = 'https://maven.neoforged.net/releases' }
+        maven { url = 'https://libraries.minecraft.net' }
+    }
+
+    java {
+        toolchain.languageVersion = JavaLanguageVersion.of(21)
+        sourceCompatibility = JavaVersion.toVersion(commonRelease)
+        targetCompatibility = JavaVersion.toVersion(commonRelease)
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+        options.release = java.targetCompatibility.majorVersion.toInteger()
+    }
+
+    tasks.withType(Test).configureEach {
+        useJUnitPlatform()
+    }
+}

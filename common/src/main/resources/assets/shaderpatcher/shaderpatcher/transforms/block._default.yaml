@@ -1,10 +1,12 @@
 waving:
   grass:
     tall:
+      - ""
       - ":half=lower"
       - ":half=upper"
   flower:
     tall:
+      - ""
       - ":half=lower"
       - ":half=upper"
   leaves:
@@ -13,17 +15,45 @@ waving:
     - ":waterlogged=false"
 SSS:
   grass_block:
+    - ""
     - ":snowy=false"
     - ":snowy=true"
   podzol:
+    - ""
     - ":snowy=false"
     - ":snowy=true"
   mycelium:
+    - ""
     - ":snowy=false"
     - ":snowy=true"
   farmland:
+    - ""
     - ":moisture=0~7"
 translucent:
   glass:
     - ""
     - "_pane"
+emissive:
+  lamp:
+    - ""
+    - ":lit=false"
+    - ":lit=true"
+  candle:
+    - ""
+    - ":lit=false"
+    - ":lit=true"
+    - ":candles=1~4"
+    - ":lit=false:candles=1~4"
+    - ":lit=true:candles=1~4"
+  campfire:
+    - ""
+    - ":lit=false"
+    - ":lit=true"
+  redstone:
+    wire:
+      - ""
+      - ":power:0~15"
+    torch:
+      - ""
+      - ":lit=false"
+      - ":lit=true"

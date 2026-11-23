@@ -1,31 +1,10 @@
 pluginManagement {
     repositories {
-        maven {
-            name = 'Fabric'
-            url = 'https://maven.fabricmc.net'
-        }
-
-        mavenCentral()
         gradlePluginPortal()
-    }
-}
-
-dependencyResolutionManagement {
-    repositories {
         mavenCentral()
     }
 }
 
 rootProject.name = 'ShaderPatcher'
 
-include('common')
-
-include('fabric:1.19')
-include('fabric:26.1')
-include('fabric:26.3')
-
-include('neoforge:1.21')
-include('neoforge:26.1')
-include('neoforge:26.3')
-
-include('forge:1.19')
+include 'common', 'dist', 'fabric', 'forge', 'neoforge'

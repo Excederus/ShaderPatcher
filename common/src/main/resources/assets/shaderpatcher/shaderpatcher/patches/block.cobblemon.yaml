@@ -24,7 +24,7 @@ waving:
     - white_apricorn_sapling
   leaves:
     - apricorn_leaves
-    - saccharine_sapling
+    - saccharine_leaves
   on_water:
     - medicinal_leek
   crop:

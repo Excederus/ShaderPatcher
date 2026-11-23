@@ -1,0 +1,13 @@
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+}
+
+dependencies {
+    api project(':common')
+    compileOnly "net.neoforged.fancymodloader:loader:${neoforge_version}"
+}

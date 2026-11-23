@@ -16,6 +16,10 @@ emissive:
     shroom: shroomlight
     magma: magma_block
     redstone: redstone_block
+  frog:
+    ochre: ochre_froglight
+    verdant: verdant_froglight
+    pearlescent: pearlescent_froglight
   campfire:
     _default: campfire
     regular: campfire
