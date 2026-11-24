@@ -77,11 +77,20 @@ public final class ResourceDiscovery {
             }
             else {
                 long applicableMods = resources.stream().map(Resource::id).distinct().count();
-                LOG.info("Loaded {} patch(es) applicable to the current install", applicableMods);
+                long bundled = countDistinctIds(resources, Source.BUNDLED);
+                long internal = countDistinctIds(resources, Source.INTERNAL);
+                long external = countDistinctIds(resources, Source.EXTERNAL);
+
+                LOG.info("Loaded {} patch(es) applicable to the current install ({} bundled, {} internal, {} external)",
+                        applicableMods, bundled, internal, external);
             }
         }
 
         return resources;
+    }
+
+    private static long countDistinctIds(List<Resource> resources, Source source) {
+        return resources.stream().filter(resource -> resource.source() == source).map(Resource::id).distinct().count();
     }
 
     private static ResourceId parseFilename(String filename, Kind kind, String context) {
